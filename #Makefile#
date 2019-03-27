@@ -6,3 +6,4 @@ clean:
 	rm ./ran
 	rm ./*/*~
 	rm ./*~
+rm 

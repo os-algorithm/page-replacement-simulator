@@ -1,6 +1,19 @@
-// opt algorithm, minimize miss(pull) time. 
-// further-in-future
-inline int get_opt(int len, int M, int n, int a[], int opt[])
+#include <dirent.h>
+
+const int MM = 512;
+const int Nl = 8, Nr = 512, Nstep = 4;
+
+const char *trace_path = "/mnt/c/Users/ljt12138/Desktop/oslab/sim_ran/trace";
+
+/* opt algorithm, minimize miss(pull) time.
+ * @len : length of memory access trace
+ * @M   : number of logical pages
+ * @n   : number of physical pages
+ * @a   : memory access trace array
+ * @opt : memory access R/W array 
+ */
+template<typename A, typename B>
+inline int get_opt(int len, int M, int n, A a, B opt)
 {
 	static int nxt[MAX_LEN];
 	assert(len <= MAX_LEN);
@@ -51,15 +64,13 @@ int analyze_random(int len, int M, int n, page_rp & algo)
 	assert(len <= MAX_LEN);
 	for (int i = 0; i < len; i++) {
 		opt[i] = rand()&1;
-		if (opt[i]) algo.read(a[i] = i%M);
-		else algo.write(a[i] = i%M);
-		// cout << opt[i] << "," << a[i] << " ";
+		if (opt[i]) algo.read(a[i] = rand()%M);
+		else algo.write(a[i] = rand()%M);
 	}
-	// cout << endl;
 	return get_opt(len, M, n, a, opt);
 }
 
-void analyze(page_rp & algo)
+void analyze_random(page_rp & algo)
 {
 	int len = 20000; 
 	int M = 512;   
@@ -70,7 +81,6 @@ void analyze(page_rp & algo)
 	const int T = 500, Times = 5;
 	static int miss[T], push[T], pull[T];
 	static double comp[T];
-	
 	for (int n = Nl, i = 0; n <= Nr; n += Nstep, i++) {
 		comp[i] = miss[i] = push[i] = pull[i] = 0;
 		for (int j = 1; j <= Times; j++) {
@@ -102,11 +112,79 @@ void analyze(page_rp & algo)
 	cout << endl;
 }
 
-void analyze()
-{
-	analyze(rp_ran_algo);
-	analyze(rp_fifo_algo);
-}
+class Analyzer {
+
+	vector<size_t> a;
+	vector<char> opt;
+	
+	// read trace files frome trace_path
+	bool read_trace(dirent *ptr) {
+		int _wa_;
+		string str = trace_path;
+		str = str + "/" + ptr->d_name;
+		size_t pos = str.size()-6;
+		if (str.substr(pos, 6) != ".trace")
+			return false;
+		cout << " -- Read Trace : " << ptr->d_name << " -- " << endl;
+		FILE *tra = fopen(str.c_str(), "r");
+		int len;
+		assert(tra != NULL);
+		assert(fscanf(tra, "%d\n", &len) == 1);
+		a.resize(len);
+		opt.resize(len);
+		for (int i = 0; i < len; i++) {
+			char op;
+			size_t pos;
+			_wa_ = fscanf(tra, "%c %lu\n", &op, &pos);
+			assert(op == 'R' || op == 'W');
+			assert(pos < MM);
+			a[i] = pos, opt[i] = op;
+		}
+		fclose(tra);
+		return true;
+	}
+
+	double analyze_trace(int n, page_rp & algo)
+	{
+		algo.reset(n);
+		for (int i = 0; i < a.size(); i++) {
+			if (opt[i] == 'R') algo.read(a[i]);
+			else if (opt[i] == 'W') algo.write(a[i]);
+			else assert(false);
+		}
+		return 1.0*algo.pull/get_opt(a.size(), MM, n, a, opt);
+	}
+
+	// analyze using current trace
+	void analyze_trace(page_rp & algo)
+	{
+		vector<double> rat;
+		for (int n = Nl; n <= Nr; n += Nstep) {
+			rat.push_back(analyze_trace(n, algo));
+		}
+		cout << "Algorithm name : " << algo.name << endl;
+		for (int i = 0; i < rat.size(); i++)
+			cout << fixed << setprecision(3) << rat[i] << " ";
+		cout << endl;
+	}
+
+public:
+
+	// analyze all trace file
+	void analyze()
+	{
+		DIR * dir = opendir(trace_path);
+		dirent * ptr;
+	        while((ptr = readdir(dir)) != NULL) {
+			if (read_trace(ptr)) {
+				analyze_trace(rp_ran_algo);
+				analyze_trace(rp_fifo_algo);
+				analyze_trace(rp_lru_algo);
+			}
+		}
+	}
+	
+} analyzer;
 
 void init()
 {

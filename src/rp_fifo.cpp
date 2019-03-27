@@ -4,7 +4,7 @@
  */
 class rp_fifo : public page_rp {
 
-	size_t time = 0;
+	size_t time;
 	queue<size_t> reco;
 	
 public:
