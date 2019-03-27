@@ -46,7 +46,6 @@ public:
 	// init and set memory size to n
 	void reset(int n)
 	{
-		reset_hook(n);
 		this->n = n;
 		mem.clear();
 		miss = push = pull = 0;
@@ -54,16 +53,9 @@ public:
 	
 	// find a page to swap out , return page number
 	virtual size_t find_swap() = 0;
-	virtual void write_hook(size_t pos)
-	{ }
-	virtual void read_hook(size_t pos)
-	{ }
-	virtual void reset_hook(int n)
-	{ }
-	
+
 	void write(size_t pos) {
 		map<size_t, int>::iterator iter = mem.find(pos);
-		write_hook(pos);
 		if (iter != mem.end()) {
 			iter->second |= PTE_A | PTE_D;
 			return;
@@ -73,7 +65,6 @@ public:
 	
 	void read(size_t pos) {
 		map<size_t, int>::iterator iter = mem.find(pos);
-		read_hook(pos);
 		if (iter != mem.end()) {
 			iter->second |= PTE_A;
 			return;
