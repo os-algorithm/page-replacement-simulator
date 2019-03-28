@@ -6,3 +6,6 @@ clean:
 	rm ./ran
 	rm ./*/*~
 	rm ./*~
+	rm ./docs/*.aux
+	rm ./docs/*.log
+	rm ./docs/*.pdf
