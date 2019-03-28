@@ -112,6 +112,10 @@ void analyze_random(page_rp & algo)
 	cout << endl;
 }
 
+/* Analyzer using trace frome /trace_path/*.trace
+ * display efficiency of replacement algorithm 
+ * when memory size if Nl .. Nr by Nstep pages
+ */
 class Analyzer {
 
 	vector<size_t> a;
@@ -180,6 +184,7 @@ public:
 				analyze_trace(rp_ran_algo);
 				analyze_trace(rp_fifo_algo);
 				analyze_trace(rp_lru_algo);
+				analyze_trace(rp_clock_algo);
 			}
 		}
 	}

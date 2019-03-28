@@ -6,6 +6,7 @@ using namespace std;
 #include "rp_marking.cpp"
 #include "rp_fifo.cpp"
 #include "rp_lru.cpp"
+#include "rp_clock.cpp"
 #include "driver.cpp"
 
 int main()

@@ -60,15 +60,39 @@ public:
 	{ }
 	virtual void reset_hook(int n)
 	{ }
+
+	// get mask of page 	
+	int get_mask(size_t pos)
+	{
+		assert(mem.count(pos));
+		return mem[pos];
+	}
+
+	// set mask for page
+	void set_mask(size_t pos, int mask)
+	{
+		assert(mem.count(pos));
+		mem[pos] = mask;
+	}
+	
+	// write out a page pos and set PTE_D
+	// for clock algorithm
+	void write_back(size_t pos) {
+		push++;
+		mem[pos] &= ~PTE_D;
+	}
+
+	bool inside(size_t pos)
+	{ return mem.count(pos); }
 	
 	void write(size_t pos) {
 		map<size_t, int>::iterator iter = mem.find(pos);
 		write_hook(pos);
 		if (iter != mem.end()) {
 			iter->second |= PTE_A | PTE_D;
-			return;
+		} else {
+			swap_in(pos);
 		}
-		swap_in(pos);
 	}
 	
 	void read(size_t pos) {
@@ -76,8 +100,8 @@ public:
 		read_hook(pos);
 		if (iter != mem.end()) {
 			iter->second |= PTE_A;
-			return;
+		} else {
+			swap_in(pos);
 		}
-		swap_in(pos);
 	}
 };
