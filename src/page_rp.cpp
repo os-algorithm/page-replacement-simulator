@@ -1,7 +1,7 @@
 const int PTE_P = 1;
 const int PTE_A = 2;
 const int PTE_D = 4;
-const int MAX_LEN = 20005;
+const int MAX_LEN = 50005;
 const int MAX_SIZE = 512;
 
 /* Abstract Base Class for Page Replacement Algorithms
@@ -46,7 +46,7 @@ public:
 	// init and set memory size to n
 	void reset(int n)
 	{
-		reset_hook(n);
+		reset_hook(n); 
 		this->n = n;
 		mem.clear();
 		miss = push = pull = 0;

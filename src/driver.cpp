@@ -1,7 +1,11 @@
 #include <dirent.h>
 
+// maximum of logical memory pages 
 const int MM = 512;
+// number of memory frames
 const int Nl = 8, Nr = 512, Nstep = 4;
+// sequence length for random OPT test 
+const int Rlen = 50000;
 
 const char *trace_path = "/mnt/c/Users/ljt12138/Desktop/oslab/sim_ran/trace";
 
@@ -168,15 +172,38 @@ class Analyzer {
 		}
 		cout << "Algorithm name : " << algo.name << endl;
 		for (int i = 0; i < rat.size(); i++)
-			cout << fixed << setprecision(3) << rat[i] << " ";
+			cout << fixed << setprecision(3) << rat[i] << "\t";
 		cout << endl;
 	}
 
+	// analyze opt algorithm in random situation
+	void analyze_opt_random()
+	{
+		cout << "OPT Miss Ratio : M = " << MM << ", len = " << Rlen << endl;
+		opt.resize(Rlen);
+		a.resize(Rlen);
+		for (int n = Nl; n <= Nr; n += Nstep) {
+			for (int j = 0; j < Rlen; j++) {
+				if (rand()&1) {
+					opt[j] = 'R';
+					a[j] = rand()%MM;
+				} else {
+					opt[j] = 'L';
+					a[j] = rand()%MM;
+				}
+			}
+			int miss = get_opt(Rlen, MM, n, a, opt);
+			cout << fixed << setprecision(3) << 1.0*miss/Rlen << "\t";
+		}
+		cout << endl;
+	}
+	
 public:
 
 	// analyze all trace file
 	void analyze()
 	{
+		analyze_opt_random();
 		DIR * dir = opendir(trace_path);
 		dirent * ptr;
 	        while((ptr = readdir(dir)) != NULL) {
