@@ -5,7 +5,7 @@ const int MM = 512;
 // number of memory frames
 const int Nl = 8, Nr = 512, Nstep = 4;
 // sequence length for random OPT test 
-const int Rlen = 50000;
+const int Rlen = 10000;
 
 const char *trace_path = "/mnt/c/Users/ljt12138/Desktop/oslab/sim_ran/trace";
 
@@ -52,68 +52,6 @@ inline int get_opt(int len, int M, int n, A a, B opt)
 		}
 	}
 	return miss;
-}
-
-/* analyze using random sequence 
- * @len     : memory access sequence length
- * @M       : logical page number
- * @n       : physical memory page number
- * @page_rp : algorithm
- * return opt pull number
- */
-int analyze_random(int len, int M, int n, page_rp & algo)
-{
-	algo.reset(n);
-	static int a[MAX_LEN], opt[MAX_LEN];
-	assert(len <= MAX_LEN);
-	for (int i = 0; i < len; i++) {
-		opt[i] = rand()&1;
-		if (opt[i]) algo.read(a[i] = rand()%M);
-		else algo.write(a[i] = rand()%M);
-	}
-	return get_opt(len, M, n, a, opt);
-}
-
-void analyze_random(page_rp & algo)
-{
-	int len = 20000; 
-	int M = 512;   
-	int Nl = 8, Nr = 512, Nstep = 4;
-	cout << "Algorithm : " << algo.name << ", Len = " << len
-	     << ", M = " << M << ", N = " << Nl << " .. " << Nr
-	     << " by " << Nstep << endl;
-	const int T = 500, Times = 5;
-	static int miss[T], push[T], pull[T];
-	static double comp[T];
-	for (int n = Nl, i = 0; n <= Nr; n += Nstep, i++) {
-		comp[i] = miss[i] = push[i] = pull[i] = 0;
-		for (int j = 1; j <= Times; j++) {
-			int t = analyze_random(len, M, n, algo);
-			assert(1.0*algo.miss/t >= 1);
-			comp[i] += 1.0*algo.miss/t;
-			miss[i] += algo.miss;
-			push[i] += algo.push;
-			pull[i] += algo.pull;
-		}
-		miss[i] /= Times;
-		push[i] /= Times;
-		pull[i] /= Times;
-		comp[i] /= Times;
-	}
-	
-	int n = (Nr - Nl) / Nstep + 1;
-	for (int i = 0; i < n; i++)
-		cout << miss[i] << "\t";
-	cout << endl;
-	for (int i = 0; i < n; i++)
-		cout << push[i] << "\t";
-	cout << endl;
-	for (int i = 0; i < n; i++)
-		cout << pull[i] << "\t";
-	cout << endl;
-	for (int i = 0; i < n; i++)
-		cout << fixed << setprecision(3) << comp[i] << "\t";
-	cout << endl;
 }
 
 /* Analyzer using trace frome /trace_path/*.trace
@@ -164,12 +102,18 @@ class Analyzer {
 	}
 
 	// analyze using current trace
-	void analyze_trace(page_rp & algo)
+	void analyze_trace(page_rp & algo, bool rand = false)
 	{
 		vector<double> rat;
-		for (int n = Nl; n <= Nr; n += Nstep) {
-			rat.push_back(analyze_trace(n, algo));
+		rat.resize((Nr-Nl)/Nstep + 1);
+		const int T = 5;
+		for (int j = 0; j < T; j++) {
+			for (int n = Nl, i = 0; n <= Nr; n += Nstep, i++) {
+				rat[i] += analyze_trace(n, algo);
+			}
 		}
+		for (int i = 0; i < rat.size(); i++)
+			rat[i] /= T;
 		cout << "Algorithm name : " << algo.name << endl;
 		for (int i = 0; i < rat.size(); i++)
 			cout << fixed << setprecision(3) << rat[i] << "\t";
@@ -197,21 +141,87 @@ class Analyzer {
 		}
 		cout << endl;
 	}
+
 	
+	/* analyze using random sequence 
+	 * @len     : memory access sequence length
+	 * @M       : logical page number
+	 * @n       : physical memory page number
+	 * @page_rp : algorithm
+	 * return opt pull number
+	 */
+	int analyze_random(int len, int M, int n, page_rp & algo)
+	{
+		algo.reset(n);
+		static int a[MAX_LEN], opt[MAX_LEN];
+		assert(len <= MAX_LEN);
+		for (int i = 0; i < len; i++) {
+			opt[i] = rand()&1;
+			if (opt[i]) algo.read(a[i] = rand()%M);
+			else algo.write(a[i] = rand()%M);
+		}
+		return get_opt(len, M, n, a, opt);
+	}
+
+	void analyze_random(page_rp & algo)
+	{
+		cout << "Algorithm : " << algo.name << ", Len = " << Rlen
+		     << ", M = " << MM << ", N = " << Nl << " .. " << Nr
+		     << " by " << Nstep << endl;
+		const int T = 500, Times = 5;
+		static int miss[T], push[T], pull[T];
+		static double comp[T];
+		for (int n = Nl, i = 0; n <= Nr; n += Nstep, i++) {
+			comp[i] = miss[i] = push[i] = pull[i] = 0;
+			for (int j = 1; j <= Times; j++) {
+				int t = analyze_random(Rlen, MM, n, algo);
+				assert(1.0*algo.miss/t >= 1);
+				comp[i] += 1.0*algo.miss/t;
+				miss[i] += algo.miss;
+				push[i] += algo.push;
+				pull[i] += algo.pull;
+			}
+			miss[i] /= Times;
+			push[i] /= Times;
+			pull[i] /= Times;
+			comp[i] /= Times;
+		}
+	
+		int n = (Nr - Nl) / Nstep + 1;
+
+		/* for (int i = 0; i < n; i++)
+			cout << miss[i] << "\t";
+		cout << endl;
+		for (int i = 0; i < n; i++)
+			cout << push[i] << "\t";
+		cout << endl;
+		for (int i = 0; i < n; i++)
+			cout << pull[i] << "\t";
+			cout << endl; */
+		
+		for (int i = 0; i < n; i++)
+			cout << fixed << setprecision(3) << comp[i] << "\t";
+		cout << endl;
+	}
+
 public:
 
 	// analyze all trace file
 	void analyze()
 	{
 		analyze_opt_random();
+		analyze_random(rp_ran_algo);
+		analyze_random(rp_marking_algo);
+		analyze_random(rp_fifo_algo);
 		DIR * dir = opendir(trace_path);
 		dirent * ptr;
 	        while((ptr = readdir(dir)) != NULL) {
 			if (read_trace(ptr)) {
-				analyze_trace(rp_ran_algo);
+				analyze_trace(rp_ran_algo, true);
 				analyze_trace(rp_fifo_algo);
 				analyze_trace(rp_lru_algo);
 				analyze_trace(rp_clock_algo);
+				analyze_trace(rp_marking_algo, true);
 			}
 		}
 	}
