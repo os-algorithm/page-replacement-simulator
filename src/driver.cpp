@@ -17,7 +17,7 @@ const char *trace_path = "/mnt/c/Users/ljt12138/Desktop/oslab/sim_ran/trace";
  * @opt : memory access R/W array 
  */
 template<typename A, typename B>
-inline int get_opt(int len, int M, int n, A a, B opt)
+inline int get_opt(int len, int M, int n, A &a, B &opt)
 {
 	static int nxt[MAX_LEN];
 	assert(len <= MAX_LEN);

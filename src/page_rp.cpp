@@ -1,7 +1,7 @@
 const int PTE_P = 1;
 const int PTE_A = 2;
 const int PTE_D = 4;
-const int MAX_LEN = 50005;
+const int MAX_LEN = 1 << 22;
 const int MAX_SIZE = 512;
 
 /* Abstract Base Class for Page Replacement Algorithms

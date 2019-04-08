@@ -59,7 +59,7 @@ public:
 			assert(inside(clocks[pt]));
 			int cur = clocks[pt], mask = get_mask(cur);
 			if (mask & PTE_A) {
-				set_mask(cur, mask);
+				set_mask(cur, mask & (~PTE_A));
 			} else if (mask & PTE_D) {
 				write_back(cur);
 			} else {
