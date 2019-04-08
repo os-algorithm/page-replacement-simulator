@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  2 APR 2019 11:13
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  4 APR 2019 14:54
 entering extended mode
 **\nonstopmode\input page_replacement.tex
 (c:\Users\ljt12138\Desktop\oslab\sim_ran\docs\page_replacement.tex
@@ -322,99 +322,172 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
+(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen139
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen140
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count171
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count172
+\leftroot@=\count173
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count174
+\DOTSCASE@=\count175
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box36
+\strutbox@=\box37
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count176
+\c@MaxMatrixCols=\count177
+\dotsspace@=\muskip10
+\c@parentequation=\count178
+\dspbrk@lvl=\count179
+\tag@help=\toks17
+\row@=\count180
+\column@=\count181
+\maxfields@=\count182
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
 (c:\Users\ljt12138\Desktop\oslab\sim_ran\docs\page_replacement.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen139
-\scratchbox=\box36
-\nofMPsegments=\count172
-\nofMParguments=\count173
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen140
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count183
+\scratchdimen=\dimen148
+\scratchbox=\box38
+\nofMPsegments=\count184
+\nofMParguments=\count185
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen149
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
+\everyMPtoPDFconversion=\toks22
 ) (C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
 File: standard.bdg 2008/12/29 4.8.2
 )
@@ -424,156 +497,213 @@ File: extended.enc 2008/12/29 4.8.2
 (C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
 File: extended.chr 2008/12/29 4.8.2
 )
-LaTeX Font Info:    Try loading font information for C19+rm on input line 14.
+LaTeX Font Info:    Try loading font information for C19+rm on input line 17.
 
 (C:\CTEX\MiKTeX\tex\latex\ctex\fd\c19rm.fd
 File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12.05> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 17.
+
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
- family 'def' instead. on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.54> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
- [1
+ family 'def' instead. on input line 21.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.54> not available
+(Font)              size <10.95> substituted on input line 23.
+
+[1
 
 ]
-Package CJKpunct Info: punctuation spaces for family 'zhkai' do not exist. Use 
-family 'def' instead. on input line 29.
- [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
+Overfull \hbox (1.65884pt too wide) in paragraph at lines 36--37
+[]\C19/rm/m/n/10.54/58 ∑ \C19/rm/m/n/10.54/50 Ç \C19/rm/m/n/10.54/47 å \C19/rm/
+m/n/10.54/61 ± \C19/rm/m/n/10.54/38 °|\C19/rm/m/n/10.54/26 ß| \C19/rm/m/n/10.54
+/56 é \C19/rm/m/n/10.54/41 {$\OML/cmm/m/it/10.54 A$\C19/rm/m/n/10.54/55 ¥$\OML/
+cmm/m/it/10.54 f\OT1/cmr/m/n/10.54 (\OML/cmm/m/it/10.54 k; h\OT1/cmr/m/n/10.54 
+)$-Competitive\C19/rm/m/n/10.54/40 |\C19/rm/m/n/10.54/26 ß| $\OML/cmm/m/it/10.
+54 f\OT1/cmr/m/n/10.54 (\OML/cmm/m/it/10.54 k; h\OT1/cmr/m/n/10.54 )$\C19/rm/m/
+n/10.54/47 å \C19/rm/m/n/10.54/61 ± \C19/rm/m/n/10.54/38 ° \C19/rm/m/n/10.54/58
+ è \C19/rm/m/n/10.54/56 é \C19/rm/m/n/10.54/41 {$\OML/cmm/m/it/10.54 A$\C19/rm/
+m/n/10.54/40 
+ []
 
-(C:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+Package CJKpunct Info: punctuation spaces for family 'zhkai' do not exist. Use 
+family 'def' instead. on input line 41.
+
+Overfull \hbox (0.2388pt too wide) in paragraph at lines 68--69
+\C19/rm/m/it/10.54/40 È \C19/rm/m/it/10.54/62 u \C19/rm/m/it/10.54/61 ò \C19/rm
+/m/it/10.54/42 á \C19/rm/m/it/10.54/61 ±$\OML/cmm/m/it/10.54 s[]$\C19/rm/m/it/1
+0.54/47 m \C19/rm/m/it/10.54/57 ﬁ \C19/rm/m/it/10.54/40  „$\OML/cmm/m/it/10.54
+ b[]$|\C19/rm/m/it/10.54/26 ß| $\OML/cmm/m/it/10.54 b[]$\C19/rm/m/it/10.54/40 
+ \C19/rm/m/it/10.54/47 m \C19/rm/m/it/10.54/57 ﬁ$\OML/cmm/m/it/10.54 s[]$\C19/r
+m/m/it/10.54/55 ¥ \C19/rm/m/it/10.54/65 Å \C19/rm/m/it/10.54/60  \C19/rm/m/it/
+10.54/40 $\OML/cmm/m/it/10.54 j$|\C19/rm/m/it/10.54/26 ß| \C19/rm/m/it/10.54/4
+9 ˜ \C19/rm/m/it/10.54/65 v$\OMS/cmsy/m/n/10.54 f\OML/cmm/m/it/10.54 s[]; s[] \
+OT1/cmr/m/n/10.54 + 1\OML/cmm/m/it/10.54 ; [] ; s[]\OMS/cmsy/m/n/10.54 g$\C19/r
+m/m/it/10.54/36 ù
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
+ (C:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.54> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+ [3] [4]
+! Undefined control sequence.
+l.130 \bibitem{yaoprinciple} \url
+                                 {https://en.wikipedia.org/wiki/Yao's\_princ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.132 \bibitem{prooffif} \url
+                             {https://piazza.com/class/i5j09fnsl7k5x0?cid=1296}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.133 \bibitem{proofmarking} \url
+                                 {https://riptutorial.com/algorithm/topic/80...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 \bibitem{mitonline} \url
+                              {https://ocw.mit.edu/courses/electrical-engine...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 []\OT1/cmr/m/n/10.54 https://ocw.mit.edu/courses/electrical-engineering-and-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 \OT1/cmr/m/n/10.54 computer-science/6-854j-advanced-algorithms-fall-2005/lectur
 e-
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.104 ...icon} https://en.wikipedia.org/wiki/Page_
-                                                  replacement_algorithm#Cons...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! You can't use `macro parameter character #' in math mode.
-l.104 ...edia.org/wiki/Page_replacement_algorithm#
-                                                  Conservative_algorithms
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+! Undefined control sequence.
+l.135 \bibitem{wikicon} \url
+                            {https://en.wikipedia.org/wiki/Page\_replacement...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: Command \end{thebibliography} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 \end{thebibliography}
-                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Empty `thebibliography' environment on input line 105.
-
-
-LaTeX Warning: Empty `thebibliography' environment on input line 105.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.105 \end{thebibliography}
-                           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (37.70618pt too wide) in paragraph at lines 104--106
-[]\OT1/cmr/m/n/10.54 https://en.wikipedia.org/wiki/Page$[]\OML/cmm/m/it/10.54 e
-placement[]lgorithmConservative[]lgorithms$ 
+Overfull \hbox (62.71025pt too wide) in paragraph at lines 135--136
+[]\OT1/cmr/m/n/10.54 https://en.wikipedia.org/wiki/Page[]replacement[]algorithm
+#Conservative[]algorithms 
  []
 
-[4] (c:\Users\ljt12138\Desktop\oslab\sim_ran\docs\page_replacement.aux) ) 
+! Undefined control sequence.
+l.136 \bibitem{riplifo} \url
+                            {https://riptutorial.com/algorithm/example/25916...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+[]\OT1/cmr/m/n/10.54 https://riptutorial.com/algorithm/example/25916/paging--on
+line-
+ []
+
+[5] (c:\Users\ljt12138\Desktop\oslab\sim_ran\docs\page_replacement.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41pt have occurred.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9198 strings out of 495354
- 152710 string characters out of 3183858
- 186403 words of memory out of 3000000
- 12117 multiletter control sequences out of 15000+200000
- 42473 words of font info for 144 fonts, out of 3000000 for 9000
+ 10257 strings out of 495354
+ 165440 string characters out of 3183858
+ 200428 words of memory out of 3000000
+ 13123 multiletter control sequences out of 15000+200000
+ 51033 words of font info for 181 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,6n,28p,847b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/WI
-NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.tt
-f><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/s
-imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
-/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
-/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai
-.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
-s/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
+ 36i,6n,28p,847b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
+s/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
 OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
-<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/sim
-hei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
+kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
 onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
 INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
-tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/
+tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
 simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
 S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
-:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
-i.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fon
-ts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
-DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
+:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simka
+i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
+ts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
+DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf
+><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/
+WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.
+ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
 /simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
 WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
 C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
 un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
 nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
-NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.tt
-c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
+c><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
 imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
 /Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmitt10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsl10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
-:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on page_replacement.pdf (4 pages, 556311 bytes).
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmitt10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on page_replacement.pdf (5 pages, 631074 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
+ 458 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,8 +6,11 @@
 \newtheorem{proof}{Ö¤Ã÷}[section]
 
 \usepackage{cite}
+\usepackage{mathrsfs}
+\usepackage{amsfonts,amssymb}
+\usepackage{amsmath}
 
-\title{Ò³ÃæÖÃ»»Ëã·¨}
+\title{Ò³ÃæÖÃ»»Ëã·¨µ÷ÑÐ±¨¸æ}
 \author{ljt12138}
 
 \begin{document}
@@ -15,29 +18,22 @@
 
 \section{¸ÅÊö}
 
-ÔÚÏÖ´úÒ³Ê½ÐéÄâ´æ´¢¼ÆËã»ú£¬ÄÚ´æ±»¿´×÷ÊÇ´ÅÅÌµÄ»º´æ£¬²Ù×÷ÏµÍ³Í¨¹ý½«³£ÓÃµÄÐéÄâÄÚ´æÒ³·ÅÈëÎïÀíÄÚ´æÒ³Ö¡ÖÐ£¬½«²»³£ÓÃÐéÄâÄÚ´æÒ³·ÅÈë´ÅÅÌÖÐÀ´Ìá¹©¸ü´ó¡¢¸ü×Ô¶¯»¯µÄÐéÄâ´æ´¢¡£ÊµÏÖÕâÖÖ»úÖÆµÄ·½Ê½ÊÇÈ±Ò³ÖÐ¶Ï¡£µ±·ÃÎÊµÄÒ³²»ÔÚÎïÀíÄÚ´æÖÐÊ±£¬MMU»á´¥·¢È±Ò³ÖÐ¶Ï£¬²Ù×÷ÏµÍ³¸ù¾ÝÒ»¶¨Ìõ¼þ½«Õâ¸öÐéÄâÄÚ´æÒ³¼ÓÔØµ½ÄÚ´æÖÐÀ´¡£Èç¹ûÄÚ´æÒÑ¾­Ã»ÓÐ¶àÓàµÄÒ³Ö¡¿ÕÏÐ£¬¾ÍÐèÒª½«Ò»Ð©Ò³Ãæ»»³öÒÔ¿Õ³ö¿Õ¼ä¡£
+ÔÚÒ³Ê½ÐéÄâ´æ´¢¼ÆËã»úÖÐ£¬ÄÚ´æ±»¿´×÷ÊÇ´ÅÅÌµÄ»º´æ£¬²Ù×÷ÏµÍ³Í¨¹ý½«³£ÓÃµÄÐéÄâÄÚ´æÒ³·ÅÈëÎïÀíÄÚ´æÒ³Ö¡ÖÐ£¬½«²»³£ÓÃÐéÄâÄÚ´æÒ³·ÅÈë´ÅÅÌÖÐÀ´Ìá¹©¸ü´ó¡¢¸ü×Ô¶¯»¯µÄÐéÄâ´æ´¢¡£Ò³ÃæÖÃ»»Ëã·¨ÔÚÉÏÊÀ¼ÍÔøÊÇºÜÈÈÃÅµÄÑÐ¾¿·½Ïò£¬BeladyµÄ\cite{belady1966}ÖÐ¸ù¾ÝÊ¹ÓÃÒÔÍùÐÅÏ¢µÄ¶àÉÙ¶ÔËã·¨´óÖÂ¹éÀà£¬²¢¸ø³öÁËÀëÏßÏÂµÄ×îÓÅËã·¨£»ÀíÂÛÉÏ£¬¶ÔÓÚÒ³ÃæÖÃ»»ÎÊÌâ¾ºÕùÐÔ·ÖÎöµÄÑÐ¾¿ÓÐÐí¶à³É¹û£¬FiatµÈÈËµÄ\cite{fiat1991}¶ÔÓÚ¸üÒ»°ãµÄk-serverÎÊÌâÖ¤Ã÷ÁËËæ»ú±ê¼Ç·¨µÄ¾ºÕù±È£¬²¢·ÖÎöÁËËæ»úËã·¨¾ºÕù±ÈµÄÏÂ½ç¡£todo
 
-Ò³ÃæÖÃ»»Ëã·¨¾ö¶¨ÄÄÒ»¸ö¿ÕÏÐÒ³±»»»³ö¡£Ò»¸ö¸ü¼ÓÍ¨ÓÃµÄÎÊÌâ¿ÉÒÔ±»ÕâÑùÃèÊö£º¸ø¶¨Ò»Ì¨Ö§³Ö$M$¸öÂß¼­Ò³Ãæ¡¢ÓµÓÐ$N$¸öÒ³Ãæ´óÐ¡µÄÄÚ´æµÄ»úÆ÷£¬Ñ¡ÔñÃ¿´ÎµÄÖÃ»»Ò³ÃæÊ¹µÃ×ÜµÄÖÃ»»´ÎÊý×îÉÙ¡£Í¬ÑùµÄÎÊÌâÒ²ÊÊÓÃÓÚ¸ßËÙ»º´æºÍ´ÅÅÌ»º´æµÄÇé¾°£¬Ðí¶àËã·¨ÊÇÍ¨ÓÃµÄ¡£
+È·¶¨ÐÔÒ³ÃæÖÃ»»Ëã·¨µÄ¾ºÕù±È²»»áÐ¡ÓÚ$k$£¬Í¨¹ýÔÚËã·¨ÖÐÒýÈëËæ»úÒòËØ£¬¿ÉÒÔÆÚÍû½«¾ºÕù±È½µµÍÖÁ$\log k$¡£¿ÉÒÔÖ¤Ã÷£¬Ëæ»úÒ³ÃæÖÃ»»Ëã·¨ÆÚÍû¾ºÕù±ÈµÄÏÂ½çÊÇ$\log k$¡£
 
-Ò³ÃæÖÃ»»Ëã·¨¿ÉÒÔ·ÖÎªÀëÏßËã·¨£¨offine£©ºÍÔÚÏßËã·¨£¨online£©¡£ÀëÏßËã·¨ÊÇÖ¸Õû¸ö·Ã´æÐòÁÐÒÑ¾­Ô¤ÏÈ¸ø¶¨£¬ÔÚÕâÖÖÇé¿öÏÂÓµÓÐ¸ßÐ§µÄ×îÓÅËã·¨£»ÔÚÏßËã·¨ÊÇÖ¸·Ã´æÐòÁÐÊÇ¶¯Ì¬¸ø³öµÄ£¬Ö»ÓÐ½â¾öÁËÉÏÒ»´ÎµÄÖÃ»»ÎÊÌâ²Å»á¸ø³öÏÂÒ»´Î·Ã´æ²Ù×÷¡£ºÜÏÔÈ»£¬ÕæÊµÇé¾°ÏÂµÄÒ³ÃæÖÃ»»Ëã·¨±ØÐëÊÇÔÚÏßµÄ¡£Ò»°ãÀ´Ëµ£¬ÆÀ¼ÛÔÚÏßËã·¨µÄÓÅÁÓ¿ÉÒÔÓÃÆä¾ºÕùÐÔ·ÖÎö£¨Competitive analysis£©µÄ·½·¨¡£¸ø¶¨ÔÚÏßËã·¨ÓëÀëÏßÏÂµÄ×îÓÅ´ð°¸µÄ±ÈµÄÉÏ½ç³ÆÎªÔÚÏßËã·¨µÄ¾ºÕù±È£¨Competitive ratio£©¡£¾ºÕù±ÈÔ½½Ó½ü1£¬ËµÃ÷Ëã·¨Óë×îÓÅËã·¨Ô½½Ó½ü¡£
+\section{È·¶¨ÐÔËã·¨}
 
-\section{¾­µäÈ·¶¨ÐÔËã·¨}
+Ò³ÃæÖÃ»»ÎÊÌâ¿ÉÒÔ±»ÕâÑùÃèÊö£º¸ø¶¨Ò»Ì¨Ö§³Ö$h$¸öÂß¼­Ò³Ãæ¡¢ÓµÓÐ$k$¸öÒ³Ãæ´óÐ¡ÎïÀíÄÚ´æµÄ»úÆ÷£¬Ñ¡ÔñÃ¿´ÎµÄÖÃ»»Ò³ÃæÊ¹µÃ×ÜµÄÖÃ»»´ÎÊý×îÉÙ¡£
 
-BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅËã·¨£¬µ±·Ã´æÐòÁÐÒÑ¾­Ô¤ÏÈ¸ø¶¨Ê±¿ÉÒÔ×îÐ¡»¯È±Ò³´ÎÊý¡£ÁíÒ»ÖÖ¼òµ¥µÄËã·¨\texttt{FIF}£¨Further-in-future£©£¬Æä×ÜÊÇ»»³öÏÂÒ»´Î·ÃÎÊÊ±¼ä×îÍíµÄÒ³Ãæ¡£
+Ò³ÃæÖÃ»»Ëã·¨¿ÉÒÔ·ÖÎªÀëÏßËã·¨£¨off-line£©ºÍÔÚÏßËã·¨£¨on-line£©¡£ÀëÏßËã·¨ÊÇÖ¸Õû¸ö·Ã´æÐòÁÐÒÑ¾­Ô¤ÏÈ¸ø¶¨£¬¶øÔÚÏßËã·¨ÊÇÖ¸·Ã´æÐòÁÐÊÇ¶¯Ì¬¸ø³öµÄ¡£ºÜÏÔÈ»£¬ÕæÊµÇé¾°ÏÂµÄÒ³ÃæÖÃ»»Ëã·¨±ØÐëÊÇÔÚÏßµÄ¡£
 
-\begin{lemma}
-  FIFËã·¨ÊÇ×îÓÅµÄ¡£
-\end{lemma}
+BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»ÖÖ¼òµ¥µÄËã·¨\texttt{FIF}£¨Further-in-future£©£¬Í¨¹ý×ÜÊÇ»»³öÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£¬Ëã·¨¿ÉÒÔ×öµ½×îÐ¡»¯È±Ò³´ÎÊý\cite{prooffif}¡£
 
-\begin{proof}
-  Ö¤Ã÷Ê¡ÂÔ£¬Çë²Î¿¼\cite{prooffif}¡£
-\end{proof}
-
-ËäÈ»×îÓÅËã·¨ÐèÒªÊ¹ÓÃÎ´À´µÄÐÅÏ¢£¬µ«Æä¿ÉÒÔ×÷Îª·ÖÎöËã·¨µÄÒ»¸ö±ê×¼¡£Í¨¹ýÒ»¸öËã·¨È±Ò³´ÎÊýÓë×îÓÅËã·¨È±Ò³´ÎÊýµÄ±È¿ÉÒÔ¼òµ¥ÆÀ¼ÛÒ»¸öÔÚÏßËã·¨µÄÓÅÁÓ¡£ÉèÒ»¸öËã·¨$A$ÔÚ·Ã´æÐòÁÐ$S$ÉÏµÄÈ±Ò³´ÎÊýÎª$Miss(A, S)$£¬Èç¹û¶ÔÓÚÈÎÒâ·Ã´æÐòÁÐ$S$£¬¶¼ÓÐ£º
-
+ËäÈ»×îÓÅËã·¨ÐèÒªÊ¹ÓÃÎ´À´µÄÐÅÏ¢£¬µ«Æä¿ÉÒÔ×÷Îª·ÖÎöÔÚÏßËã·¨µÄÒ»¸ö±ê×¼¡£Í¨¹ýÈ±Ò³´ÎÊýÓë×îÓÅËã·¨È±Ò³´ÎÊýµÄ±È¿ÉÒÔ¼òµ¥ÆÀ¼ÛÒ»¸öÔÚÏßËã·¨µÄÓÅÁÓ¡£ÉèÒ»¸öËã·¨$A$ÔÚ·Ã´æÐòÁÐ$S$ÉÏµÄÈ±Ò³´ÎÊýÎª$Miss(A, S)$£¬Èç¹û¶ÔÓÚÈÎÒâ·Ã´æÐòÁÐ$S$£¬¶¼ÓÐ£º
 \[Miss(A, S)\le f(k, h)\times OPT(S) + O(1)\]
 
-ÎÒÃÇ¿ÉÒÔ³Æ£¬Ëã·¨$A$ÊÇ$f(k, h)$-CompetitiveµÄ¡£ÆäÖÐ$k$ÎªÎïÀíÒ³Ãæ¸öÊý£¬$h$Îª×ÜÒ³ÃæÊý¡£
+ÎÒÃÇ¿ÉÒÔ³Æ£¬Ëã·¨$A$ÊÇ$f(k, h)$-CompetitiveµÄ£¬$f(k, h)$¿ÉÒÔ³ÆÎªËã·¨$A$µÄ¾ºÕù±È¡£
 
 \subsection{È·¶¨ÐÔÔÚÏßËã·¨¾ºÕù±ÈµÄÏÂ½ç}
 
@@ -46,14 +42,13 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅËã·¨£¬µ±·Ã´æÐòÁ
 \end{theorem}
 
 \begin{proof}
-  ¿¼ÂÇ½öÓÐ$k+1$¸öÂß¼­Ò³ÃæµÄ³¤¶ÈÎª$l$µÄ·Ã´æÐòÁÐ£¬Ã¿´Î·ÃÎÊµÄÒ³ÃæÇ¡ºÃÊÇ$C$ÉÏÒ»´Î»»³öµÄÒ³Ãæ£¬ÄÇÃ´Ã¿Ò»´Î·ÃÎÊ¶¼»á·¢ÉúÈ±Ò³£»ÔÚ×îÓÅËã·¨ÖÐ£¬Ã¿´ÎÈ±Ò³·¢ÉúÖ®ºó£¬ÏÂÒ»´Î·¢ÉúÈ±Ò³Ò»¶¨ÊÇÔÚ$k$´ÎÖ®ºó£¨ÒòÎª»»³öµÄÊÇÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£©£¬Òò¶ø×ÜµÄÈ±Ò³´ÎÊý²»»á³¬¹ý$k+l/k$¡£ÓÐ£º
-  
+  ¿¼ÂÇ½öÓÐ$k+1$¸öÂß¼­Ò³ÃæµÄ³¤¶ÈÎª$l$µÄ·Ã´æÐòÁÐ£¬Ã¿´Î·ÃÎÊµÄÒ³ÃæÇ¡ºÃÊÇ$C$ÉÏÒ»´Î»»³öµÄÒ³Ãæ£¬ÄÇÃ´Ã¿Ò»´Î·ÃÎÊ¶¼»á·¢ÉúÈ±Ò³£»ÔÚ×îÓÅËã·¨ÖÐ£¬Ã¿´ÎÈ±Ò³·¢ÉúÖ®ºó£¬ÏÂÒ»´Î·¢ÉúÈ±Ò³Ò»¶¨ÊÇÔÚ$k$´ÎÖ®ºó£¨ÒòÎª»»³öµÄÊÇÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£©£¬Òò¶ø×ÜµÄÈ±Ò³´ÎÊý²»»á³¬¹ý$k+l/k$¡£ÓÐ£º  
 \[Miss(C, S)\ge k\times OPT(S)+O(1)\]
 \end{proof}
 
 \subsection{±ê¼ÇËã·¨}
 
-±ê¼ÇËã·¨£¨Marking Algorithm£©ÊÇÒ»ÀàÖÃ»»Ëã·¨µÄ×Ü³Æ¡£¼ÙÉèÃ¿¸öÔÚÄÚ´æÖÐµÄÒ³Ãæ¶¼ÓÐÒ»¸ö±ê¼ÇÎ»M¡£³õÊ¼Ê±ËùÓÐÒ³ÃæµÄ±ê¼ÇÎ»¶¼Îª$0$¡£µ±Ò»¸öÒ³Ãæ±»ÒýÓÃÊ±£¬Õâ¸öÒ³ÃæµÄ±ê¼ÇÎ»±»±ê¼ÇÎª$1$¡£Èç¹ûËã·¨$C$Ö»»á½«±ê¼ÇÎ»Îª$0$µÄÒ³ÃæÖÃ»»³öÈ¥¡£µ±ËùÓÐÒ³Ãæ±ê¼ÇÎ»¶¼Îª$1$Ê±£¬¾Í»á½«ËùÓÐÒ³µÄ±ê¼ÇÎ»ÉèÖÃÎª$0$¡£
+±ê¼ÇËã·¨£¨Marking Algorithm£©ÊÇÒ»ÀàÖÃ»»Ëã·¨µÄ×Ü³Æ¡£¼ÙÉèÃ¿¸öÔÚÄÚ´æÖÐµÄÒ³Ãæ¶¼ÓÐÒ»¸ö±ê¼ÇÎ»A£¬³õÊ¼ÖµÎª$0$¡£Î´±ê¼ÇµÄÒ³Ãæ»áÔÚ·ÃÎÊÊ±±»±ê¼Ç£¬µ±ËùÓÐÒ³Ãæ¶¼±»±ê¼ÇÊ±£¬½«ËùÓÐÒ³ÃæµÄ±ê¼ÇÖØÐÂÖÃÎª$0$¡£±ê¼ÇËã·¨ÊÇÄÇÐ©Ö»»á½«Î´±ê¼ÇµÄÒ³ÃæÖÃ»»³öÈ¥µÄËã·¨¡£
 
 Ðí¶à¸ù¾Ý·ÃÎÊÅÅÐòµÄÒ³ÃæÖÃ»»Ëã·¨¶¼ÊÇ±ê¼ÇËã·¨£¬ÀýÈç×î½üÎ´Ê¹ÓÃËã·¨£¨\texttt{NRU}£©Óë×î½ü×î¾ÃÎ´Ê¹ÓÃËã·¨£¨\texttt{LRU}£©¡£
 
@@ -70,38 +65,75 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅËã·¨£¬µ±·Ã´æÐòÁ
 \end{theorem}
 
 \begin{proof}
-  ½«ÐòÁÐ»®·ÖÎª$t$¸ö¿é$b_1, b_2, \dots, b_t$£¬Ã¿¸ö¿é$b_i$ÖÐ½ö°üº¬ÖÁ¶à$k$ÖÖ²»Í¬µÄÒ³Ãæ£¬ÇÒ$b_1$¾¡¿ÉÄÜ³¤£¬ÔÚ´ËÇ°ÌáÏÂ$b_2$¾¡¿ÉÄÜ³¤£¬ÒÔ´ËÀàÍÆ¡£ÓÃ¹éÄÉ·¨ºÜÈÝÒ×Ö¤Ã÷£¬ÔÚÃ¿Ò»¿éÄ©Î²£¬±ê¼ÇËã·¨×Ü»áÊ¹µÃËùÓÐ¿é±»±ê¼Ç¡£ÄÇÃ´ÔÚÏÂÒ»¿é¿ªÍ·ËùÓÐ¿é¶¼±»Çå³ý±ê¼Ç£¬ÇÒÕâÐ©Î´±ê¼ÇµÄ¿éÒªÃ´±»ÖØÐÂ·ÃÎÊ£¬ÒªÃ´±»»»³ö£¬ÕâÒ»¿éÄÚµÄ»»³ö´ÎÊý²»»á³¬¹ý$k$¡£ÄÇÃ´×ÜµÄ»»³ö´ÎÊý²»³¬¹ý$t\times k$¡£
+  ½«ÐòÁÐ°´Ë³Ðò»®·ÖÎª$t$¸ö¶Î$b_1, b_2, \dots, b_t$£¬Ã¿¸ö¶Î$b_i$ÖÐ½ö°üº¬ÖÁ¶à$k$ÖÖ²»Í¬µÄÒ³Ãæ£¬ÇÒ$b_1$¾¡¿ÉÄÜ³¤£¬ÔÚ´ËÇ°ÌáÏÂ$b_2$¾¡¿ÉÄÜ³¤£¬ÒÔ´ËÀàÍÆ¡£¼´£º¶ÔÓÚÒ»¸öÒÔ$s_i$¿ªÍ·µÄ¶Î$b_i$£¬$b_{i+1}$µÄ¿ªÍ·$s_j$ÊÇ×îÐ¡µÄ$j$£¬Âú×ã$\{s_i, s_i+1, \dots, s_j\}$°üº¬$k+1$¸ö²»Í¬µÄÎ»ÖÃ¡£ÎÒÃÇ³ÆÕâÊÇ·Ã´æÐòÁÐµÄ·Ö¸î¡£
 
-  ½ÓÏÂÀ´ÎÒÃÇËµÃ÷×îÓÅËã·¨ÖÁÉÙ»á·¢Éú$t$´ÎÈ±Ò³¡£¿¼ÂÇÃ¿Ò»¸ö¿é¿ªÍ·µÄÒ³Ãæ$p_1, p_2, \dots, p_t$¡£Èç¹û$p_i$Ã»ÓÐ·¢ÉúÈ±Ò³£¬ËµÃ÷$p_i$ÔÚÄÚ´æÖÐ¡£¸ù¾Ý»®·Ö¿éµÄ¶¨Òå£¬ÉÏÒ»´Î$p_i$±»ÒýÓÃÒ»¶¨²»ÔÚ¿é$b_{i-i}$ÖÐ£¬Òò¶ø$b_{i-1}$¿ÉÒÔÊ¹ÓÃµÄÄÚ´æÒ³ÃæÖ»ÓÐ$k-1$¸ö¡£ÄÇÃ´³ýµô$p_{i-1}$·¢ÉúµÄÈ±Ò³£¬¸ù¾Ý¸ë³²Ô­Àí£¬»¹»áÖÁÉÙ·¢ÉúÒ»´ÎÈ±Ò³¡£ËùÒÔ×ÜµÄÈ±Ò³´ÎÊýÖÁÉÙÊÇ$t$¡£ÓÉÓÚ£º
+  ÓÃ¹éÄÉ·¨¿ÉÒÔÖ¤Ã÷£¬ÔÚÃ¿Ò»¶ÎÄ©Î²£¬±ê¼ÇËã·¨×Ü»áÊ¹µÃËùÓÐ¶Î±»±ê¼Ç¡£ÄÇÃ´ÔÚÏÂÒ»¶Î¿ªÍ·ËùÓÐ¶Î¶¼±»Çå³ý±ê¼Ç£¬ÇÒÕâÐ©Î´±ê¼ÇµÄ¶ÎÒªÃ´±»ÖØÐÂ·ÃÎÊ£¬ÒªÃ´±»»»³ö£¬ÕâÒ»¶ÎÄÚµÄ»»³ö´ÎÊý²»»á³¬¹ý$k$¡£ÄÇÃ´×ÜµÄ»»³ö´ÎÊý²»³¬¹ý$t\times k$¡£
 
+  ½ÓÏÂÀ´ÎÒÃÇËµÃ÷×îÓÅËã·¨ÖÁÉÙ»á·¢Éú$t$´ÎÈ±Ò³¡£¿¼ÂÇÃ¿Ò»¸ö¶Î¿ªÍ·µÄÒ³Ãæ$p_1, p_2, \dots, p_t$¡£Èç¹û$p_i$Ã»ÓÐ·¢ÉúÈ±Ò³£¬ËµÃ÷$p_i$ÔÚÄÚ´æÖÐ¡£¸ù¾Ý»®·Ö¶ÎµÄ¶¨Òå£¬ÉÏÒ»´Î$p_i$±»ÒýÓÃÒ»¶¨²»ÔÚ$b_{i-i}$ÖÐ£¬Òò¶ø$b_{i-1}$¿ÉÒÔÊ¹ÓÃµÄÄÚ´æÒ³ÃæÖ»ÓÐ$k-1$¸ö¡£ÄÇÃ´³ýµô$p_{i-1}$·¢ÉúµÄÈ±Ò³£¬¸ù¾Ý¸ë³²Ô­Àí£¬»¹»áÖÁÉÙ·¢ÉúÒ»´ÎÈ±Ò³¡£ËùÒÔ×ÜµÄÈ±Ò³´ÎÊýÖÁÉÙÊÇ$t$¡£ÓÉÓÚ£º
   \[Miss(Marking, S)\le t\times k\le k\times OPT(S)\]
 
   ÈÎºÎ±ê¼ÇËã·¨¶¼ÊÇ$k$-CompetitiveµÄ¡£
 \end{proof}
 
-ÆäËûÈ·¶¨ÐÔËã·¨µÄ¾ºÕù±È½áÂÛÈçÏÂ\cite{mitonline}¡£
+Ò»Ð©È·¶¨ÐÔËã·¨µÄ¾ºÕù±È½áÂÛÈçÏÂ\cite{mitonline}¡£
 
 \begin{itemize}
 \item \texttt{LRU}Ëã·¨ÊÇ$k$-CompetitiveµÄ£»ÕâÊÇÉÏÃæ½áÂÛµÄÆ½·²ÍÆÂÛ¡£
 \item \texttt{FIFO}£¬\texttt{Clock}Ëã·¨ÊÇ$k$-CompetitiveµÄ£»ËûÃÇ¶¼ÊÇËùÎ½Conservative algorithms\cite{wikicon}¡£
-\item \texttt{LIFO}£¬\texttt{LFU}Ëã·¨²»ÊÇCompetitiveµÄ£¬¼´Ëã·¨È±Ò³´ÎÊýºÍ×îÓÅ½âµÄÈ±Ò³´ÎÊýÖ®±È¿ÉÒÔÎÞÏÞ´ó¡£
+\item \texttt{LIFO}£¬\texttt{LFU}Ëã·¨²»ÊÇCompetitiveµÄ£¬¼´Ëã·¨È±Ò³´ÎÊýºÍ×îÓÅ½âµÄÈ±Ò³´ÎÊýÖ®±È¿ÉÒÔÎÞÏÞ´ó\cite{riplifo}¡£
 \end{itemize}
 
-\section{Ëæ»úÖÃ»»Ëã·¨}
+\section{Ëæ»úËã·¨µÄ¾ºÕù±È}
 
 ÀàËÆµÄ£¬ÎÒÃÇ¶¨ÒåËæ»úËã·¨RÊÇ$f(h, k)$-CompetitiveµÄ£¬Èç¹û£º
+\[\mathbb{E}[Miss(R, S)]\le f(h, k)\times OPT(S) + O(1)\]
 
-\[E[Miss(R, S)]\le f(h, k)\times Miss(FIF, S) + O(1)\]
+ÔÚÏßËã·¨Ó¦¶ÔÊäÈëµÄ¹ý³Ì¿ÉÒÔ¿´³ÉÒ»¸öË«ÈËÁãºÍ²©ÞÄ¡£Ëã·¨ÊÇ¡°Defender¡±£¬ÎªÁËÈÃ´ú¼Û×îÐ¡»¯£»ÊäÈëÊÇ¡°Hacker¡±£¬ÎªÁËÈÃ´ú¼Û×î´ó»¯¡£ºÜÏÔÈ»£¬¶ÔÓÚÈÎºÎÒ»·½¶øÑÔ£¬ÓµÓÐ¹ØÓÚ¶Ô·½²ßÂÔµÄÐÅÏ¢Ô½¶à£¬ÆäÆÚÍûÊÕÒæ¾ÍÔ½´ó¡£
 
+\subsection{Ëæ»ú±ê¼ÇËã·¨}
+
+Ò»ÖÖÓÐÐ§µÄËæ»úÖÃ»»Ëã·¨±»³ÆÎªËæ»ú±ê¼ÇËã·¨£¨Random Marking£©£¬ÏÂÎÄÖÐÎÒÃÇ¼ò³ÆÆäÎª$\texttt{RM}$¡£ÆäË¼Â·ÀàËÆÓÚÒ»°ãµÄ±ê¼ÇËã·¨£¬µ«Ã¿´ÎÐèÒª»»³öÊ±»á´ÓËùÓÐÎ´±»±ê¼ÇµÄÒ³ÃæÖÐËæ»úÑ¡³öÒ»¸ö»»³ö¡£FiatÊ×ÏÈÖ¤Ã÷ÁË\texttt{RM}ÊÇ$2\log k$-CompetitiveµÄ\cite{fiat1991}¡£
+
+\begin{theorem}
+  Ëæ»ú±ê¼ÇËã·¨ÊÇ$2\log k$-CompetitiveµÄ¡£
+\end{theorem}
+
+\begin{proof}
+  ¿¼ÂÇ·Ã´æÐòÁÐµÄ·Ö¸î$b_1, b_2, \dots, b_t$£¬¿¼ÂÇÒ»¸ö¶Î$b_i$ÖÐµÄÔªËØ¡£ÎÒÃÇ³ÆÒ»¸öÒ³ÃæÊÇ\textbf{ÐÂµÄ}£¬Èç¹ûËüÔÚ$b_{i-1}$ÖÐÃ»ÓÐ±»ÒýÓÃ£¬ÔÚ$b_i$ÖÐ»¹Ã»ÓÐ±»ÒýÓÃ£»³ÆÒ»¸öÒ³ÃæÊÇ\textbf{¾ÉµÄ}£¬Èç¹ûËüÔÚ$b_{i-1}$ÖÐ±»ÒýÓÃ¹ý£¬ÔÚ$b_i$ÖÐ»¹Ã»ÓÐ±»ÒýÓÃ¡£²»·ÁÉè$b_i$ÖÐ¶ÔÐÂÒ³ÃæµÄÒýÓÃÓÐ$l_i$´Î£¬¶Ô¾ÉÒ³ÃæµÄÒýÓÃÓÐ$k-l_i$´Î¡£
+
+  ÎÒÃÇÊ×ÏÈÖ¤Ã÷£¬×îÓÅËã·¨ÔÚ$b_i$Ö´ÐÐµÄ¿ªÏúÖÁÉÙÊÇ$\sum l_i/2$¡£¼ÙÉèµÚ$b_i$ÖÐ¶ÔÐÂÒ³ÃæµÄÒýÓÃ·¢ÉúÁË$p_i$´ÎÈ±Ò³£¬ÄÇÃ´ÔÚ$b_{i-1}$ÖÐÁíÍâµÄ$l_i-p_i$¸öÒ³Ãæ¶¼Ê¼ÖÕÔÚÄÚ´æÖÐÃ»ÓÐ±»»»³ö£¬Òò¶øÔÚ$b_{i-1}$ÖÐ¿ÉÓÃµÄÒ³ÃæÖ»ÓÐ$k-(l_i-p_i)$¸ö£¬ÖÁÉÙ·¢ÉúÁË$l_i-p_i$´ÎÈ±Ò³¡£¿¼ÂÇ½«ÕâÁ½ÕßÏà¼ÓµÃµ½£º
+  \[\sum_i p_i + (l_i-p_i) = \sum_i l_i\]
+
+  Ò»´ÎÈ±Ò³ÖÁ¶à»á±»µ±Ç°¶Î¼ÆËãÒ»´Î£¬±»ÏÂÒ»¶Î¼ÆËãÒ»´Î£¬Òò´Ë×ÜµÄÈ±Ò³´ÎÊý²»»áÐ¡ÓÚÉÏÃæ½á¹ûµÄÒ»°ë£¬¼´$\sum l_i/2$¡£
+
+  ½ÓÏÂÀ´ÎÒÃÇËµÃ÷\texttt{RM}Ëã·¨ÔÚ¶Î$b_i$µÄÈ±Ò³´ÎÊý²»»á³¬¹ý$l_iH_k$£¬´Ó¶ø×ÜµÄÈ±Ò³´ÎÊý²»»á³¬¹ý$H_k\sum l_i$¡£ÆäÖÐ$H_k$ÊÇµ÷ºÍ¼¶ÊýÇ°$k$ÏîµÄºÍ¡£¶ÔÓÚÈÎºÎ±ê¼ÇËã·¨£¬ÔÚÒ»¸ö¶Î¿ªÊ¼Ê±£¬ÄÚ´æÖÐ×ÜÊÇ´æ·ÅÉÏÒ»¸ö¶ÎµÄËùÓÐÄÚÈÝ¡£Òò´Ë£¬Ã¿Ò»¸öÐÂÒ³ÃæµÄÒýÓÃ¶¼»áµ¼ÖÂÈ±Ò³£¬ÎÒÃÇÖ»ÐèÒª¹ØÐÄ¾ÉÒ³Ãæ²úÉúµÄÈ±Ò³´ÎÊý£¬¼´ÓÉÓÚ±»$b_i$ÖÐµ¼ÖÂµÄÈ±Ò³»»³öµÄ¾ÉÒ³Ãæ¡£ºÜÃ÷ÏÔ£¬×î²îÇé¿öÏÂËùÓÐÐÂÒ³ÃæµÄÒýÓÃ¶¼ÔÚ¾ÉÒ³ÃæµÄÒýÓÃÖ®Ç°¡£
+
+  Èç¹ûÒ»¸öÒ³Ãæ$P$½«Ò³Ãæ$Q$»»³ö£¬ÎÒÃÇÁ¬½ÓÒ»Ìõ´Ó$P$µ½$Q$µÄÓÐÏò±ß£¬ÄÇÃ´Ö»ÓÐÒýÓÃÊ±Èë¶ÈÎª$1$µÄµã»á·¢ÉúÈ±Ò³¡£Éè¾ÉÒ³ÃæÒÀ´ÎÊÇ$O_0, O_1, \dots, O_{k-l_i+1}$¡£µ±´¦Àí$O_j$Ê±£¬·¢ÉúÈ±Ò³ÇÒ¿ÉÄÜ»»³ö$O_j$µÄ£¬¾ÍÊÇÄÇÐ©Èë¶ÈÎª$1$£¬³ö¶ÈÎª$0$µÄµã£¬¶øÕâÑùµÄµãÇ¡ºÃÓÐ$l_i$¸ö¡£Õâ$l_i$¸öµã»áÔÚ»¹Î´±»»»³öµÄ$k-j$¸ö¾ÉÒ³ÃæÖÐµÈ¸ÅÂÊÈ¡³öÇ¡ºÃ$l_i$¸ö£¬ÄÇÃ´$O_j$±»È¡³öµÄ¸ÅÂÊ¾ÍÊÇ$l_j/(k-j)$¡£ËùÓÐ¾ÉÒ³ÃæµÄÆÚÍûÈ±Ò³´ÎÊý¾ÍÊÇ£º
+  \[\sum_{0\le j<k-l_i}\frac{l_i}{k-j} = l_i\sum_{l_i<j\le k}\frac{1}{j}=l_i(H_k-H_j)\]
+
+  ÔÙ¼ÓÉÏÐÂÒ³Ãæ·¢ÉúµÄÈ±Ò³£¬\texttt{RM}×ÜµÄ¿ªÏú²»»á³¬¹ý£º
+  \[Miss(RM, S)\le 2H_k\times OPT(S)\le 2\log k\times OPT(S)+O(1)\]
+\end{proof}
+
+\begin{theorem}
+  Ò³ÃæÖÃ»»ÎÊÌâ²»´æÔÚ$c$-CompetitiveµÄËæ»ú»¯Ëã·¨£¬¶ÔÓÚÈÎºÎ$c<H_{n-1}$¡£
+\end{theorem}
+
+Òò´ËÎÒÃÇ¿ÉÒÔÈÏÎª£¬ÔÚ¾ºÕù±ÈµÄÒâÒåÏÂ£¬\texttt{RM}¼¸ºõÒÑ¾­ÊÇ×îÓÅµÄËã·¨ÁË¡£Ê¹ÓÃ\texttt{RM}¿ÉÒÔ±£Ö¤ÔÚ±»Ä³Ð©³ÌÐò¡°¶ñÒâ¹¥»÷¡±Ê±£¬Ò³Ãæ»»Èë»»³öµÄ´ÎÊý²»»á³¬¹ý×îÓÅËã·¨µÄ$2\log k$±¶£»ÓëÖ®Ïà±È£¬ÈÎºÎÈ·¶¨ÐÔËã·¨ÖÁ¶àÖ»ÄÜ×öµ½²»³¬¹ý$k$±¶¡£
+
+\section{BeladyÏÖÏó}
 
 
 \begin{thebibliography}{3}
-\bibitem{prooffif} https://piazza.com/class/i5j09fnsl7k5x0?cid=1296
-\bibitem{proofmarking} https://riptutorial.com/algorithm/topic/8022/online-algorithms
 \bibitem{belady1966} Belady, L. A . A study of replacement algorithms for a virtual-storage computer[J]. IBM Systems Journal, 1966, 5(2):78-101.
 \bibitem{fiat1991}  Fiat A , Karp R M , Luby M , et al. Competitive paging algorithms[J]. Journal of Algorithms, 1991, 12(4):685-699.
-\bibitem{mitonline} https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-854j-advanced-algorithms-fall-2005/lecture-notes/n23online.pdf
-\bibitem{wikicon} https://en.wikipedia.org/wiki/Page_replacement_algorithm#Conservative_algorithms
+\bibitem{yaoprinciple} \url{https://en.wikipedia.org/wiki/Yao's\_principle}
+\bibitem{tarjan1985} Sleator D D , Tarjan R E . Amortized efficiency of list update and paging rules[J]. Communications of the Acm, 1985, 28(2):202-208.
+\bibitem{prooffif} \url{https://piazza.com/class/i5j09fnsl7k5x0?cid=1296}
+\bibitem{proofmarking} \url{https://riptutorial.com/algorithm/topic/8022/online-algorithms}
+\bibitem{mitonline} \url{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-854j-advanced-algorithms-fall-2005/lecture-notes/n23online.pdf}
+\bibitem{wikicon} \url{https://en.wikipedia.org/wiki/Page\_replacement\_algorithm\#Conservative\_algorithms}
+\bibitem{riplifo} \url{https://riptutorial.com/algorithm/example/25916/paging--online-caching-}
 \end{thebibliography}
 
 \end{document}

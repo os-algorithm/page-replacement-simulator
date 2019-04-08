@@ -1,0 +1,20 @@
+\subsection{极大极小原理}
+
+证明一个问题随机算法竞争比下界的重要工具是极大极小原理（Yao's Minimax Principle）\cite{yaoprinciple}。我们可以将随机算法看成在一个确定性算法集合$\mathcal{A}$中以某种分布选出一个算法，设随机变量$A$为分布$p$下选出的算法；输入集合是$\mathcal{X}$，随机变量$X$为分布$q$下选出的输入，$c(a, x)$为算法$a$在输入$x$下的开销，那么：
+\[\max_{x\in \mathcal{X}}\mathbb{E}[c(A, x)]\ge \min_{a\in\mathcal{A}}\mathbb{E}[c(a, X)]\]
+
+\begin{proof}  
+  \begin{equation}
+    \begin{align}
+      &\max_{x\in \mathcal{X}} \mathbb{E}[c(A, x)]\\
+      =&\sum_{x} q(x) \max_{x\in \mathcal{X}} \mathbb{E}[c(A, x)]\\
+      \ge &\sum_x q(x) \mathbb{E}[c(A, x)]\\
+      =&\sum_x q(x)\sum_a p(a) c(a, x)\\
+      =&\sum_x q(x)\mathbb{E}[c(A, x)]\\
+      \ge &\sum_x q(x)\min_{a\in \mathcal{A}} c(a, x)\\
+      =&\min_{a\in \mathcal{A}}\mathbb{E}[c(a, X)]
+    \end{align}
+  \end{equation}
+\end{proof}
+
+定理指出，随机算法$A$在最差输入下的开销，至少是某种分布的随机输入下最好程序的开销。那么我们要证明随机算法开销的下界，便可以通过找到某种概率分布，并证明最优的确定性算法的开销不小于随机算法的开销。
