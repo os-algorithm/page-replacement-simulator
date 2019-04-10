@@ -105,3 +105,9 @@ public:
 		}
 	}
 };
+
+#include "rp_random.cpp"
+#include "rp_marking.cpp"
+#include "rp_fifo.cpp"
+#include "rp_lru.cpp"
+#include "rp_clock.cpp"

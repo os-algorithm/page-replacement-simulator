@@ -4,6 +4,8 @@
  * output miss time & competitive ratio. 
  */
 
+#include "sim_mem.cpp"
+
 class hacker {
 public:
 	Simulater *sim;
