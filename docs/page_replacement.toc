@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}概述}{1}
+\contentsline {section}{\numberline {2}竞争性分析}{2}
+\contentsline {subsection}{\numberline {2.1}离线算法和竞争比}{2}
+\contentsline {subsection}{\numberline {2.2}确定性在线算法竞争比的下界}{3}
+\contentsline {subsection}{\numberline {2.3}标记算法}{3}
+\contentsline {subsection}{\numberline {2.4}随机性的引入}{4}
+\contentsline {subsection}{\numberline {2.5}随机置换算法}{5}
+\contentsline {subsection}{\numberline {2.6}随机标记算法}{5}
+\contentsline {subsection}{\numberline {2.7}随机策略竞争比的下界}{6}
+\contentsline {subsubsection}{\numberline {2.7.1}极大极小原理}{6}
+\contentsline {subsection}{\numberline {2.8}\texttt {LRU}退化的情景}{8}
+\contentsline {subsection}{\numberline {2.9}竞争性分析的局限性}{9}
+\contentsline {section}{\numberline {3}页面置换与局部性}{9}
+\contentsline {subsection}{\numberline {3.1}工作集模型}{10}
