@@ -4,17 +4,27 @@
  * output miss time & competitive ratio. 
  */
 
-#include "sim_mem.cpp"
+#include <vector>
+#include <string>
+#include <iostream>
 
-class hacker {
-public:
-	Simulater *sim;
-	string name;
-	virtual void main(Simulater *sim) = 0;
-};
+#include "sim_mem.hpp"
 
-#include "hacker_certain.cpp"
-#include "hacker_certain_ran.cpp"
+using std::string;
+using std::cin;
+using std::cout;
+using std::endl;
+
+#include "../page/page_rp.h"
+#include "../page/rp_random.hpp"
+#include "../page/rp_lru.hpp"
+#include "../page/rp_clock.hpp"
+#include "../page/rp_fifo.hpp"
+#include "../page/rp_marking.hpp"
+#include "hacker_certain.hpp"
+#include "hacker_certain_ran.hpp"
+
+extern size_t get_opt(const vector<ref_trace>&, int);
 
 class HackDriver {
 
@@ -34,6 +44,12 @@ public:
 
 	void hack_all(hacker &hacker_this)
 	{
+		rp_marking rp_marking_algo;
+		rp_fifo rp_fifo_algo;
+		rp_lru rp_lru_algo;
+		rp_clock rp_clock_algo;
+		rp_ran rp_ran_algo;
+
 		cout << "--- Hackall : " << hacker_this.name << " ---" << endl;
 		hack(hacker_this, rp_fifo_algo);
 		hack(hacker_this, rp_lru_algo);
@@ -52,12 +68,6 @@ void HackDriver::hack(hacker &h, page_rp &algo)
 	Simulater sim;
 	h.main(&sim);
 	vector<ref_trace> trace = sim.get_trace();
-	vector<size_t> pos;
-	vector<char> opt;
-	for (ref_trace t : trace) {
-		pos.push_back(t.pos);
-		opt.push_back(t.type == Read ? 'R' : 'W');
-	}
 	for (int size : mem_size) {
 		algo.reset(size);
 		for (ref_trace t : trace) {
@@ -66,9 +76,19 @@ void HackDriver::hack(hacker &h, page_rp &algo)
 		}
 		cout << "> size = " << size
 		     << ", miss = " << algo.miss
-		     << ", competitive = " << 1.0*algo.miss/get_opt(trace.size(), 1 << 20, size, pos, opt)
+		     << ", competitive = " << 1.0*algo.miss/get_opt(trace, size)
 		     << endl;
 	}
 }
 
-#include "hack_list.cpp"
+void HackDriver::main()
+{
+	hack_all(hacker_certain);
+	hack_all(hacker_certain_ran);
+}
+
+void hacker_main()
+{
+	hack.main();
+}
+
