@@ -1,3 +1,5 @@
+/* base class for hacker  */
+
 class hacker {
 public:
 	Simulater *sim;

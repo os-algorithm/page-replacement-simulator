@@ -13,11 +13,11 @@ public:
 	{
 		this->sim = sim;
 		size_t len = pgsize * 129;
-		Array arr = sim->new_array(len);
+		Array<int> arr = sim->new_array<int>(len);
 		size_t last = 0;
 		for (int i = 0; i < 1 << 20; i++) {
 			arr[last] = 1;
 			last = (last + pgsize) % len;
 		}
 	}
-} hacker_certain;
+} ;

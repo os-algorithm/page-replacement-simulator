@@ -11,3 +11,9 @@ struct ref_trace {
 	{ this->pos = pos, this->type = type; }
 };
 
+// total memory size
+const size_t mem_size = 1ul << 30;
+// page size
+const size_t pgsize = 1ul << 12;
+
+

@@ -35,6 +35,7 @@ void page_rp::swap_in(size_t pos)
 		mem.erase(iter);
 		mem[pos] = PTE_P;
 	}
+	swap_in_hook(pos);
 }
 
 void page_rp::reset(int n)

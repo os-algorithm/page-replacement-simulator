@@ -17,20 +17,9 @@ using std::endl;
 
 class rp_marking : public page_rp {
 
-	set<int> unmarked;
-	set<int> marked;
+	vector<size_t> unmarked;
+	vector<size_t> marked;
 	size_t current;
-
-	void hook_fun(size_t pos)
-	{
-		if (unmarked.count(pos)) {
-			unmarked.erase(pos);
-			marked.insert(pos);
-		} else if (!marked.count(pos) && marked.size() + unmarked.size() < n) {
-			marked.insert(pos);
-		}
-		current = pos;
-	}
 
 public:
 
@@ -46,28 +35,32 @@ public:
 		strcpy(name, "Random Marking");
 	}
 
-	virtual void write_hook(size_t pos)
-	{ hook_fun(pos); }
-
-	virtual void read_hook(size_t pos)
-	{ hook_fun(pos); }
-
+	virtual void swap_in_hook(size_t pos)
+	{
+		marked.push_back(pos);
+		set_mask(pos, get_mask(pos) | PTE_A);
+	}
+	
 	virtual size_t find_swap()
 	{
-		if (unmarked.size() + marked.size() != n) {
-			cout << unmarked.size() + marked.size() << endl;
-			cout << n << endl;
+		while (!unmarked.empty()) {
+			size_t top = unmarked[unmarked.size()-1];
+			if (get_mask(top) & PTE_A) {
+				unmarked.pop_back();
+				marked.push_back(top);
+			} else break;
 		}
-		assert(unmarked.size() + marked.size() == n);
-		if (unmarked.empty())
+		if (unmarked.empty()) { 
 			swap(unmarked, marked);
-		size_t ran = rand() % unmarked.size();
-		set<int>::iterator it = unmarked.begin();
-		for (size_t i = 0; i < ran; i++)
-			it++;
-		size_t ret = *it;
-		unmarked.erase(it);
-		marked.insert(current);
+			random_shuffle(unmarked.begin(), unmarked.end());
+			for (size_t i : unmarked) {
+				set_mask(i, get_mask(i) & (~PTE_A));
+			}
+		}
+		assert(!unmarked.empty());
+		size_t ret = unmarked[unmarked.size()-1];
+		unmarked.pop_back();
+		assert(inside(ret));
 		return ret;
 	}
 	

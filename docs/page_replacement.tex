@@ -4,6 +4,7 @@
 \newtheorem{definition}{¶¨Òå}[section]
 \newtheorem{lemma}{ÒýÀí}[section]
 \newtheorem{proof}{Ö¤Ã÷}[section]
+\usepackage{ccmap}
 
 \usepackage{cite}
 \usepackage{mathrsfs}
@@ -33,10 +34,10 @@
 
 BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»ÖÖ¼òµ¥µÄËã·¨\texttt{FIF}£¨Further-in-future£©£¬Í¨¹ý×ÜÊÇ»»³öÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£¬Ëã·¨¿ÉÒÔ×öµ½×îÐ¡»¯È±Ò³´ÎÊý\cite{prooffif}¡£
 
-ËäÈ»×îÓÅËã·¨ÐèÒªÊ¹ÓÃÎ´À´µÄÐÅÏ¢£¬ÔÚÊµ¼ùÖÐ²»¿ÉÄÜÊµÏÖ£¬µ«Æä¿ÉÒÔ×÷Îª·ÖÎöÔÚÏßËã·¨µÄÒ»¸ö±ê×¼¡£Ò»¸öºÜÏÔÈ»µÄÊÂÊµÊÇ£¬Ö±½ÓÊ¹ÓÃÈ±Ò³ÊýÆÀ¼ÛÔÚÏßËã·¨Ó¦¶ÔËùÓÐÊäÈëµÄÄÜÁ¦ÊÇÓÞ´ÀµÄ¡ª¡ªÈç¹ûÁ¬×îÓÅËã·¨¶¼ÎÞ·¨¸ø³öÁîÎÒÃÇÂúÒâµÄÃüÖÐÂÊ£¬ÄÇÃ´ÔÚÏßËã·¨Ò²²»¿ÉÄÜ×öµ½¸üÓÅ¡£Òò´Ë£¬ÎÒÃÇÑ¡ÔñÊ¹ÓÃÔÚÏßËã·¨È±Ò³´ÎÊýºÍ×îÓÅËã·¨È±Ò³´ÎÊýµÄ±ÈÀ´ÆÀ¼ÛÔÚÏßËã·¨µÄÓÅÁÓ¡£ÉèÒ»¸öËã·¨$A$ÔÚ·Ã´æÐòÁÐ$S$ÉÏµÄÈ±Ò³´ÎÊýÎª$Miss(A, S)$£¬Èç¹û¶ÔÓÚÈÎÒâ·Ã´æÐòÁÐ$S$£¬¶¼ÓÐ£º
-\[Miss(A, S)\le f(k, h)\times OPT(S) + O(1)\]
+ËäÈ»×îÓÅËã·¨ÐèÒªÊ¹ÓÃÎ´À´µÄÐÅÏ¢£¬ÔÚÊµ¼ùÖÐ²»¿ÉÄÜÊµÏÖ£¬µ«Æä¿ÉÒÔ×÷Îª·ÖÎöÔÚÏßËã·¨µÄÒ»¸ö±ê×¼¡£Ò»¸öºÜÏÔÈ»µÄÊÂÊµÊÇ£¬Ö±½ÓÊ¹ÓÃÈ±Ò³ÊýÆÀ¼ÛÔÚÏßËã·¨Ó¦¶ÔËùÓÐÊäÈëµÄÄÜÁ¦ÊÇÓÞ´ÀµÄ¡ª¡ªÈç¹ûÁ¬×îÓÅËã·¨¶¼ÎÞ·¨¸ø³öÁîÎÒÃÇÂúÒâµÄÃüÖÐÂÊ£¬ÄÇÃ´ÔÚÏßËã·¨Ò²²»¿ÉÄÜ×öµ½¸üÓÅ¡£Òò´Ë£¬ÎÒÃÇÑ¡ÔñÊ¹ÓÃÔÚÏßËã·¨È±Ò³´ÎÊýºÍ×îÓÅËã·¨È±Ò³´ÎÊýµÄ±ÈÀ´ÆÀ¼ÛÔÚÏßËã·¨µÄÓÅÁÓ¡£ÉèÒ»¸öËã·¨$A$ÔÚ·Ã´æÐòÁÐ$S$ÉÏµÄÈ±Ò³´ÎÊýÎª$A(S)$£¬Èç¹û¶ÔÓÚÈÎÒâ·Ã´æÐòÁÐ$S$£¬¶¼ÓÐ£º
+\[A(S)\le c\times OPT(S) + O(1)\]
 
-ÎÒÃÇ¿ÉÒÔ³Æ£¬Ëã·¨$A$ÊÇ$f(k, h)$-CompetitiveµÄ£¬$f(k, h)$¿ÉÒÔ³ÆÎªËã·¨$A$µÄ¾ºÕù±È¡£
+ÎÒÃÇ¿ÉÒÔ³Æ£¬Ëã·¨$A$ÊÇ$c$-CompetitiveµÄ£¬$c$¿ÉÒÔ³ÆÎªËã·¨$A$µÄ¾ºÕù±È¡£
 
 ÎªÁË·½±ã£¬ÎÒÃÇÓÐÊ±²»»á¿¼ÂÇ´ÓÄÚ´æÎª¿Õµ½ÄÚ´æÌîÂúÕâÒ»¶ÎµÄ´ú¼Û£¬ÒòÎªÎÞÂÛÈÎºÎËã·¨ÔÚÕâÀï¸¶³öµÄ´ú¼Û¶¼ÊÇÏàÍ¬µÄ¡£
 
@@ -50,7 +51,7 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 
 \begin{proof}
   ¿¼ÂÇ½öÓÐ$k+1$¸öÂß¼­Ò³ÃæµÄ³¤¶ÈÎª$l$µÄ·Ã´æÐòÁÐ£¬Ã¿´Î·ÃÎÊµÄÒ³ÃæÇ¡ºÃÊÇ$C$ÉÏÒ»´Î»»³öµÄÒ³Ãæ£¬ÄÇÃ´Ã¿Ò»´Î·ÃÎÊ¶¼»á·¢ÉúÈ±Ò³£»ÔÚ×îÓÅËã·¨ÖÐ£¬Ã¿´ÎÈ±Ò³·¢ÉúÖ®ºó£¬ÏÂÒ»´Î·¢ÉúÈ±Ò³ÖÁÉÙÊÇÔÚ$k$´ÎÖ®ºó£¨ÒòÎª»»³öµÄÊÇÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£©£¬Òò¶ø×ÜµÄÈ±Ò³´ÎÊý²»»á³¬¹ý$l/k$¡£ÓÐ£º  
-\[Miss(C, S)\ge k\times OPT(S)+O(1)\]
+\[C(S)\ge k\times OPT(S)+O(1)\]
 \end{proof}
 
 ÎÒÃÇÓÃÒ»¸öÀý×ÓÀ´½âÊÍ¾ºÕù±ÈµÄ¼ÛÖµ¡£\texttt{LRU}Ëã·¨Í¨³£±»ÈÏÎªÊÇÐÔÄÜ×îºÃµÄÒ³ÃæÖÃ»»Ëã·¨Ö®Ò»£¬µ«Ò»¸ö¼òµ¥µÄÇé¾°¾Í»áµ¼ÖÂÆäÑÏÖØÍË»¯¡£ÉèÂß¼­Ò³ÃæÊýÎª$k+1$£¬ÎïÀíÒ³ÃæÊýÎª$k$¡£
@@ -89,7 +90,7 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
   ÓÃ¹éÄÉ·¨¿ÉÒÔÖ¤Ã÷£¬ÔÚÃ¿Ò»¶ÎÄ©Î²£¬±ê¼ÇËã·¨×Ü»áÊ¹µÃËùÓÐ¶Î±»±ê¼Ç¡£ÄÇÃ´ÔÚÏÂÒ»¶Î¿ªÍ·ËùÓÐ¶Î¶¼±»Çå³ý±ê¼Ç£¬ÇÒÕâÐ©Î´±ê¼ÇµÄ¶ÎÒªÃ´±»ÖØÐÂ·ÃÎÊ£¬ÒªÃ´±»»»³ö£¬ÕâÒ»¶ÎÄÚµÄ»»³ö´ÎÊý²»»á³¬¹ý$k$¡£ÄÇÃ´×ÜµÄ»»³ö´ÎÊý²»³¬¹ý$t\times k$¡£
 
   ½ÓÏÂÀ´ÎÒÃÇËµÃ÷×îÓÅËã·¨ÖÁÉÙ»á·¢Éú$t$´ÎÈ±Ò³¡£¿¼ÂÇÃ¿Ò»¸ö¶Î¿ªÍ·µÄÒ³Ãæ$p_1, p_2, \dots, p_t$¡£Èç¹û$p_i$Ã»ÓÐ·¢ÉúÈ±Ò³£¬ËµÃ÷$p_i$ÔÚÄÚ´æÖÐ¡£¸ù¾Ý»®·Ö¶ÎµÄ¶¨Òå£¬ÉÏÒ»´Î$p_i$±»ÒýÓÃÒ»¶¨²»ÔÚ$b_{i-1}$ÖÐ£¬Òò¶ø$b_{i-1}$¿ÉÒÔÊ¹ÓÃµÄÄÚ´æÒ³ÃæÖ»ÓÐ$k-1$¸ö¡£ÄÇÃ´³ýµô$p_{i-1}$·¢ÉúµÄÈ±Ò³£¬¸ù¾Ý¸ë³²Ô­Àí£¬»¹»áÖÁÉÙ·¢ÉúÒ»´ÎÈ±Ò³¡£ËùÒÔ×ÜµÄÈ±Ò³´ÎÊýÖÁÉÙÊÇ$t$¡£ÓÉÓÚ£º
-  \[Miss(Marking, S)\le t\times k\le k\times OPT(S)\]
+  \[Marking(S)\le t\times k\le k\times OPT(S)\]
 
   ÈÎºÎ±ê¼ÇËã·¨¶¼ÊÇ$k$-CompetitiveµÄ¡£
 \end{proof}
@@ -106,8 +107,8 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 
 ÔÚÏßËã·¨Ó¦¶ÔÊäÈëµÄ¹ý³Ì¿ÉÒÔ¿´³ÉÒ»¸öË«ÈËÁãºÍ²©ÞÄ¡£Ëã·¨ÊÇ¡°Defender¡±£¬ÎªÁËÈÃ´ú¼Û×îÐ¡»¯£»ÊäÈëÊÇ¡°Hacker¡±£¬ÎªÁËÈÃ´ú¼Û×î´ó»¯¡£ÓÉÓÚÃæ¶ÔµÄÊÇ¡°³äÂú¶ñÒâµÄ¡±ÊäÈëÐòÁÐ£¬È·¶¨ÐÔËã·¨µÄ¾ºÕù±È²¢²»ÊÇºÜÀíÏë¡£Ò»ÖÖ×ÔÈ»µÄÏë·¨¾ÍÊÇÔÚ¾ö²ßÖÐÒýÈëËæ»úÐÔ¡£
 
-Ê¹ÓÃÀàËÆÖ®Ç°µÄ·½·¨£¬ÎÒÃÇ¶¨ÒåËæ»úËã·¨RÊÇ$f(h, k)$-CompetitiveµÄ£¬Èç¹û£º
-\[\mathbb{E}[Miss(R, S)]\le f(h, k)\times OPT(S) + O(1)\]
+Ê¹ÓÃÀàËÆÖ®Ç°µÄ·½·¨£¬ÎÒÃÇ¶¨ÒåËæ»úËã·¨RÊÇ$fc$-CompetitiveµÄ£¬Èç¹û£º
+\[\mathbb{E}[R(S)]\le c\times OPT(S) + O(1)\]
 
 \subsection{Ëæ»úÖÃ»»Ëã·¨}
 
@@ -135,7 +136,7 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
   \[\sum_{0\le j<k-l_i}\frac{l_i}{k-j} = l_i\sum_{l_i<j\le k}\frac{1}{j}=l_i(H_k-H_j)\]
 
   ÔÙ¼ÓÉÏÐÂÒ³Ãæ·¢ÉúµÄÈ±Ò³£¬\texttt{RM}×ÜµÄ¿ªÏú²»»á³¬¹ý£º
-  \[Miss(RM, S)\le 2H_k\times OPT(S)\]
+  \[RM(S)\le 2H_k\times OPT(S)\]
 \end{proof}
 
 ×¢Òâµ½ÉÏÃæµÄÖ¤Ã÷ÖÐ¸ø³öÁË×îÓÅËã·¨È±Ò³´ÎÊýÒ»¸öºÜºÃµÄ½ç£¬ÎÒÃÇÕâÀïµ¥¶ÀÁÐ³öÕâ¸ö½áÂÛ¡£
@@ -145,9 +146,7 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
   \[\frac{1}{2}\sum_i l_i \le OPT(S)\le \sum_i l_i\]
 \end{theorem}
 
-\subsection{Ëæ»ú²ßÂÔ¾ºÕù±ÈµÄÏÂ½ç}
-
-\subsubsection{¼«´ó¼«Ð¡Ô­Àí}
+\subsection{¼«´ó¼«Ð¡Ô­Àí}
 
 Ö¤Ã÷Ò»¸öÎÊÌâËæ»úËã·¨¾ºÕù±ÈÏÂ½çµÄÖØÒª¹¤¾ßÊÇ¼«´ó¼«Ð¡Ô­Àí£¨Minimax Principle£©¡£ÎÒÃÇ¿ÉÒÔ½«Ëæ»úËã·¨¿´³ÉÔÚÒ»¸öÈ·¶¨ÐÔËã·¨¼¯ºÏ$\mathcal{A}$ÖÐÒÔÄ³ÖÖ·Ö²¼Ñ¡³öÒ»¸öËã·¨£¬ÉèËæ»ú±äÁ¿$A$Îª·Ö²¼$p$ÏÂÑ¡³öµÄËã·¨£»ÊäÈë¼¯ºÏÊÇ$\mathcal{X}$£¬Ëæ»ú±äÁ¿$X$Îª·Ö²¼$q$ÏÂÑ¡³öµÄÊäÈë£¬$c(a, x)$ÎªËã·¨$a$ÔÚÊäÈë$x$ÏÂµÄ¿ªÏú£¬ÄÇÃ´£º
 \[\max_{x\in \mathcal{X}}\mathbb{E}[c(A, x)]\ge \min_{a\in\mathcal{A}}\mathbb{E}[c(a, X)]\]
@@ -167,6 +166,8 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 \end{proof}
 
 ¶¨ÀíÖ¸³ö£¬Ëæ»úËã·¨$A$ÔÚ×î²îÊäÈëÏÂµÄ¿ªÏú£¬ÖÁÉÙÊÇÄ³ÖÖ·Ö²¼µÄËæ»úÊäÈëÏÂ×îºÃ³ÌÐòµÄ¿ªÏú¡£ÄÇÃ´ÎÒÃÇÒªÖ¤Ã÷Ëæ»úËã·¨¿ªÏúµÄÏÂ½ç£¬±ã¿ÉÒÔ¹¹ÔìÄ³ÖÖ¸ÅÂÊ·Ö²¼£¬²¢Ö¤Ã÷×îÓÅµÄÈ·¶¨ÐÔËã·¨µÄ¿ªÏú²»Ð¡ÓÚËæ»úËã·¨µÄ¿ªÏú¡£ÀûÓÃÕâ¸ö¼«´ó¼«Ð¡Ô­Àí¿ÉÒÔÖ¤Ã÷ÏÂÃæÕâ¸ö¶¨Àí\cite{graph}¡£
+
+\subsection{Ëæ»úËã·¨¾ºÕù±ÈµÄÏÂ½ç}
 
 \begin{theorem}
   Ò³ÃæÖÃ»»ÎÊÌâ²»´æÔÚ$c$-CompetitiveµÄËæ»ú»¯Ëã·¨£¬¶ÔÓÚÈÎºÎ$c<\lceil\log(k+1)\rceil/2$¡£
@@ -216,7 +217,7 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 
 \subsection{¾ºÕùÐÔ·ÖÎöµÄ¾ÖÏÞÐÔ}
 
-±ØÐëÖ¸³ö£¬¾ºÕùÐÔ·ÖÎöÓëÊµ¼ù¾­ÑéÖ®¼äµÄ¾àÀëÊÇ¾Þ´óµÄ¡£¾¡¹Ü\texttt{LRU}µÄ¾ºÕù±È´ïµ½ÁË$k$£¬µ«ÔÚÊµ¼ÊÓ¦ÓÃÖÐ£¬Æä¾ºÕù±ÈÍ¨³£ÔÚ$1$µ½$2$Ö®¼ä£»ÔÚÊµ¼ùÖÐ£¬\texttt{LRU}¼¸ºõ×ÜÊÇ±È\texttt{FIFO}ºÃµÃ¶à£¬È»¶ø¾ºÕùÐÔ·ÖÎö²¢²»ÄÜ¸ø³öËûÃÇÖ®¼äµÄÈÎºÎÇø±ð¡£\cite{onlinealgo}ÖÐÖ¸³öÁË¸ü¶àÕâÑùµÄÀý×Ó¡£ÎÒÃÇ½«ÔÚÏÂÒ»ÕÂÏêÏ¸ÃèÊöÒ»Ð©ÎªÁËÃÖ²¹ÀíÂÛºÍÊµ¼ùÖ®Ç°²î¾à¶øÌá³öµÄÒ»Ð©Ä£ÐÍ¡£
+±ØÐëÖ¸³ö£¬¾ºÕùÐÔ·ÖÎöÓëÊµ¼ù¾­ÑéÖ®¼äµÄ¾àÀëÊÇ¾Þ´óµÄ¡£¾¡¹Ü\texttt{LRU}µÄ¾ºÕù±È´ïµ½ÁË$k$£¬µ«ÔÚÊµ¼ÊÓ¦ÓÃÖÐ£¬Æä¾ºÕù±ÈÍ¨³£ÔÚ$1$µ½$2$Ö®¼ä£»ÔÚÊµ¼ùÖÐ£¬\texttt{LRU}¼¸ºõ×ÜÊÇ±È\texttt{FIFO}ºÃ£¬È»¶ø¾ºÕùÐÔ·ÖÎö²¢²»ÄÜ¸ø³öËûÃÇÖ®¼äµÄÈÎºÎÇø±ð¡£\cite{onlinealgo}ÖÐÖ¸³öÁË¸ü¶àÕâÑùµÄÀý×Ó¡£ÎÒÃÇ½«ÔÚÏÂÒ»ÕÂÏêÏ¸ÃèÊöÒ»Ð©ÎªÁËÃÖ²¹ÀíÂÛºÍÊµ¼ùÖ®Ç°²î¾à¶øÌá³öµÄÒ»Ð©Ä£ÐÍ¡£
 
 \section{Ò³ÃæÖÃ»»Óë¾Ö²¿ÐÔ}
 
@@ -235,20 +236,35 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 
 \subsection{·Ã´æÍ¼Ä£ÐÍ}
 
-·Ã´æÍ¼ÊÇ¿Ì»­·Ã´æ¾Ö²¿ÐÔµÄÄ£ÐÍÖ®Ò»¡£\cite{graph}Ê×ÏÈÊ¹ÓÃÕâ¸öÄ£ÐÍÃèÊö³ÌÐò·Ã´æµÄ¾Ö²¿ÐÔ¡£
+·Ã´æÍ¼ÊÇ¿Ì»­·Ã´æ¾Ö²¿ÐÔµÄÄ£ÐÍÖ®Ò»¡£\cite{graph}Ê×ÏÈÊ¹ÓÃÕâ¸öÄ£ÐÍÃèÊö³ÌÐò·Ã´æµÄ¾Ö²¿ÐÔ£¬ÏÂÃæµÄ¹¤×÷Ö÷ÒªÀ´Ô´ÓÚÕâÆªÂÛÎÄ¡£ÆäÖÐµÄÖ÷Òª¹¤×÷°üÀ¨£º·ÖÎöÁËÎÞÏò·Ã´æÍ¼ÉÏµÄÒ³ÃæÖÃ»»ÎÊÌâ£¬¸ø³öÁËÔÚÏßËã·¨¾ºÕù±È¸ü½ôµÄÏÂ½ç£¬·ÖÎöÁË·Ã´æÍ¼ÉÏ\texttt{LRU}Ëã·¨µÄ¾ºÕù±È²¢Ö¤Ã÷ÁËÁ½¸öÓÐÈ¤µÄ½áÂÛ£º
+
+\begin{enumerate}
+\item \texttt{LRU}Ëã·¨¼¸ºõ×ÜÊÇ±È\texttt{FIFO}ÒªºÃµÄ¡£¸üÑÏ½÷µÄ£¬ÔÚÈÎÒâ·Ã´æÍ¼$G$ÉÏ£¬\texttt{LRU}Ëã·¨µÄ¾ºÕù±È×ÜÊÇÐ¡ÓÚÁ½±¶µÄ\texttt{FIFO}Ëã·¨µÄ¾ºÕù±È¡£¼´£º
+  \[c_{LRU, k}(G)\le 2c_{FIFO, k}(G)\]
+  \cite{fifolru}Ôò½øÒ»²½Ö¤Ã÷ÁË$c_{LRU, k}\le c_{FIFO, k}(G)$¡£
+\item ÔÚ·Ã´æÍ¼$G$ÊÇÒ»¿ÃÊ÷µÄÇé¾°ÏÂ£¬ÎÞÂÛÊ÷µÄÐÎÌ¬ÈçºÎ£¬\texttt{LRU}×ÜÄÜ´ïµ½È·¶¨ÐÔËã·¨¾ºÕù±ÈµÄÏÂ½ç¡£
+\end{enumerate}
+
+·Ã´æÍ¼Ä£ÐÍµÄÓÅÊÆºÍ¾ÖÏÞÐÔ¶¼ÊÇÃ÷ÏÔµÄ¡£ÓÉÓÚ³ÌÐò¼¸ºõ×ÜÊÇ°´ÕÕÆäÊý¾Ý½á¹¹µÄ½á¹¹·ÃÎÊÄÚ´æ£¬Ê¹ÓÃÍ¼×÷Îª·ÃÎÊÄÚ´æ¾Ö²¿ÐÔµÄÃèÊöÊÇºÏÀíµÄ¡£¸ü¼ÓÒ»°ãµÄ£¬³ÌÐòµÄ¿ØÖÆÁ÷Í¼Ò»¶¨ÊÇ³ÌÐòµÄ·Ã´æÍ¼¡£\cite{stronggraph}½«ÕâÀïµÄ¼¼ÊõÍÆ¹ãµ½ÁËÓÐÏòÍ¼ÉÏ£¬²¢¶Ô×î³£¼ûµÄ¿ØÖÆÁ÷Í¼¡ª¡ª¿É¹æÔ¼Á÷Í¼×öÁËÌÖÂÛ¡£
+
+È»¶ø£¬ÎÒÃÇÎÞ·¨¼ÄÏ£ÍûÈÃ²Ù×÷ÏµÍ³½èÖú·Ã´æÍ¼À´ÓÅ»¯Ò³ÃæµÄ»»Èë»»³ö¡ª¡ª¾¡¹ÜÕâÑùµÄËã·¨È·Êµ´æÔÚ¡ª¡ªÒòÎªÕâÑù×öµÄ³É±¾Ì«¸ßÁË¡£Ö»ÓÐµ±Í¼¾ßÓÐÄ³Ð©ºÜÌØÊâµÄÐÔÖÊÊ±£¬ÀíÂÛ²ÅÓÐ¿ÉÄÜÖ¸µ¼ÎÒÃÇÑ¡ÓÃºÏÊÊµÄËã·¨À´Ìá¸ßÐ§ÂÊ¡£
+
+³ýÈ¥Ò³ÃæÖÃ»»ÎÊÌâ£¬·Ã´æÍ¼µÄÁíÍâÒ»¸ö×÷ÓÃÔÚÓÚËùÎ½³ÌÐòÖØ×é¡£³ÌÐòÖØ×é·¢ÉúÔÚ±àÒëÊ±£¬Í¨¹ý½«³ÌÐòµÄÄÚ´æ²¼¾ÖÖØÐÂ×éÖ¯£¬Ê¹µÃÆäÓµÓÐ¸üºÃµÄ·Ã´æ¾Ö²¿ÐÔ¡£
+
+\subsection{Ò»°ãÍ¼¾ºÕù±ÈµÄÒ»¸öÏÂ½ç}
 
 ÔÚ·Ã´æÍ¼Ä£ÐÍÖÐ£¬·Ã´æÍ¼$G=(V, E)$ÊÇÒ»¸öÎÞÏòÍ¼£¬³ÌÐòµÄ·Ã´æÐòÁÐÊÇÍ¼$G$ÉÏµÄÒ»ÌõÂ·¾¶$\{p_1, p_2, \dots, p_m\}$¡£ÎÒÃÇ³Æµ±Ç°Î»ÖÃÊÇ$p_t$£¬Èç¹ûÎÒÃÇ´¦ÀíµÀµ½µÄ×îºóÒ»´Î·Ã´æÊÇ$p_t$¡£ºÜÃ÷ÏÔ£¬µ±$G = K_M$Ê±Ä£ÐÍÍË»¯ÎªÒ»°ã·Ã´æÐòÁÐµÄÇé¾°¡£
 
-Ê×ÏÈ¶¨ÒåÒ»Ð©¼ÇºÅ¡£$c_{A, k}(G)$±íÊ¾Ëã·¨$A$ÔÚÎïÀíÄÚ´æÒ³ÃæÊýÎª$k$Ê±£¬ÔÚÍ¼$G$ÉÏµÄ½üËÆ±È¡£ÓÉÓÚ·Ã´æÍ¼Ä£ÐÍÊÇÒ»°ãÒ³ÃæÖÃ»»ÎÊÌâµÄÑÏ¸ñ¼ÓÇ¿£¬×îÓÅËã·¨\texttt{OPT}ÈÔÈ»ÊÇ×îÓÅËã·¨£¬¼´$c_{OPT, k}(G) = 1$¡£ÔÚ²»ÒýÆðÆçÒåµÄÇé¿öÏÂ£¬ÎÒÃÇÓÃ$n$±íÊ¾¿ÉÄÜ·ÃÎÊµÄÒ³ÃæÊý$|V|$£¬$\mathcal{T}_i$±íÊ¾Í¼$G$½ÚµãÊýÎª$i$µÄÁªÍ¨×ÓÊ÷£¬$leaf(T)$±íÊ¾Ê÷$T$µÄÒ¶×Ó¼¯ºÏ¡£¶ÔÓÚËã·¨$A$ºÍ·Ã´æÍ¼$G$£¬ÔÚ´¦Àíµ½·Ã´æÐòÁÐµÚ$t$ÏîÊ±£¬´¦ÓÚÄÚ´æÖÐµÄÒ³Ãæ¼¯ºÏÎª$A(G, t)$¡£
+Ê×ÏÈ¶¨ÒåÒ»Ð©¼ÇºÅ¡£$c_{A, k}(G)$±íÊ¾Ëã·¨$A$ÔÚÎïÀíÄÚ´æÒ³ÃæÊýÎª$k$Ê±£¬ÔÚÍ¼$G$ÉÏµÄ½üËÆ±È¡£ÓÉÓÚ·Ã´æÍ¼Ä£ÐÍÊÇÒ»°ãÒ³ÃæÖÃ»»ÎÊÌâµÄÑÏ¸ñ¼ÓÇ¿£¬×îÓÅËã·¨\texttt{OPT}ÈÔÈ»ÊÇ×îÓÅËã·¨£¬¼´$c_{OPT, k}(G) = 1$¡£ÔÚ²»ÒýÆðÆçÒåµÄÇé¿öÏÂ£¬ÎÒÃÇÓÃ$n$±íÊ¾¿ÉÄÜ·ÃÎÊµÄÒ³ÃæÊý$|V|$£¬$\mathcal{T}_i$±íÊ¾Í¼$G$½ÚµãÊýÎª$i$µÄÁªÍ¨×ÓÊ÷¼¯ºÏ£¬$leaf(T)$±íÊ¾Ê÷$T$µÄÒ¶×Ó¼¯ºÏ¡£¶ÔÓÚËã·¨$A$ºÍ·Ã´æÍ¼$G$£¬ÔÚ´¦Àíµ½·Ã´æÐòÁÐµÚ$t$ÏîÊ±£¬´¦ÓÚÄÚ´æÖÐµÄÒ³Ãæ¼¯ºÏÎª$\texttt{ATree}(t)$¡£
 
 Ê×ÏÈÎÒÃÇ¸ø³öÔÚ¹Ì¶¨·Ã´æÍ¼ÏÂ£¬ÔÚÏßËã·¨½üËÆ±ÈµÄÒ»¸öÏÂ½ç¡£
 
 \begin{lemma}
-  ¶ÔÓÚ¸ø¶¨µÄÊ÷$T$£¬$OPT(T, t)$ÊÇÊ÷ÉÏµÄÒ»¸öÁªÍ¨¿é£¬ÇÒµ±Ç°Î»ÖÃ$p_t\in OPT(T, t)$¡£
+  ¶ÔÓÚ¸ø¶¨µÄÊ÷$T$£¬\texttt{OPTTree(t)}ÊÇÊ÷ÉÏµÄÒ»¸öÁªÍ¨¿é£¬ÇÒµ±Ç°Î»ÖÃ$p_t\in \texttt{OPTTree(t)}$¡£
 \end{lemma}
 
 \begin{proof}
-  ¶Ô·Ã´æÐòÁÐ³¤¶È×ö¹éÄÉ¡£µ±ÐèÒª»»³öÒ»¸öÒ³ÃæÊ±£¬×îÓÅËã·¨×ÜÊÇ»»³öÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£¬ÓÉÓÚ·ÃÎÊÒ»¸öÒ¶×Ó½Úµã×ÜÊÇÐèÒªÏÈ·ÃÎÊÆä¸¸Ç×£¬±»»»³öµÄ½ÚµãÒ»¶¨ÊÇ$OPT(T, t)$µÄÒ¶×Ó¡£Òò´ËÔÚÈÎºÎÊ±ºò$OPT(T, t)$¶¼ÊÇÊ÷ÉÏµÄÒ»¸öÁªÍ¨¿é¡£
+  ¶Ô·Ã´æÐòÁÐ³¤¶È×ö¹éÄÉ¡£µ±ÐèÒª»»³öÒ»¸öÒ³ÃæÊ±£¬×îÓÅËã·¨×ÜÊÇ»»³öÏÂÒ»´Î·ÃÎÊ×îÍíµÄÒ³Ãæ£¬ÓÉÓÚ·ÃÎÊÒ»¸öÒ¶×Ó½Úµã×ÜÊÇÐèÒªÏÈ·ÃÎÊÆä¸¸Ç×£¬±»»»³öµÄ½ÚµãÒ»¶¨ÊÇ\texttt{OPTTree(t)}µÄÒ¶×Ó¡£Òò´ËÔÚÈÎºÎÊ±ºò\texttt{OPTTree(t)}¶¼ÊÇÊ÷ÉÏµÄÒ»¸öÁªÍ¨¿é¡£
 \end{proof}
 
 \begin{theorem}
@@ -263,13 +279,72 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
   \[c_{A, k}\ge |leaf(T)| - 1\]  
 \end{proof}
 
-ÖµµÃ×¢ÒâµÄÊÇ£¬ËäÈ»Õâ¸öÏÂ½ç±ÈÆðÒ»°ãÇé¾°ÏÂµÄÏÂ½ç$k$ÂÔºÃ£¬µ«×î»µÇé¿öÏÂµÄ¸Ä½ø³Ì¶ÈÈÔÈ»²»´ó¡£ÀýÈçÔÚÍêÈ«¶þ²æÊ÷ÉÏ£¬Õâ¸öÖµ´óÔ¼ÊÇ$k/2$¡£µ«ÔÚ·Ã´æÍ¼ÊÇÒ»ÌõÁ´µÄÊ±ºò£¬Õâ¸öÏÂ½ç±äÎªÁË$1$¡£µ±Í¼±È½Ï½Ó½üÁ´Ê±£¬Õâ¸öÏÂ½çµÄ¸Ä½øÊÇ±È½Ï´óµÄ¡£
+ÖµµÃ×¢ÒâµÄÊÇ£¬Õâ¸öÏÂ½ç²¢²»×ÜÊÇ×ã¹»½ôµÄ¡£ÔÚÉÏÒ»ÕÂ¶ÔÒ»°ã·Ã´æÐòÁÐÉÏÈ·¶¨ÐÔËã·¨¾ºÕù±ÈÏÂ½çµÄÖ¤Ã÷ÖÐ£¬·Ã´æÍ¼×ÜÊÇÒ»¸ö$k+1$¸ö½ÚµãµÄ»·¡£¶ÔÓÚ»·µÄÇé¾°£¬ÕâÀïµÄÏÂ½çÖ»ÄÜËµÃ÷$c_{A, k}(G)\ge 1$£¬µ«ÊÂÊµÉÏÎÒÃÇÒÑ¾­ËµÃ÷ÁË$c_{A, k}(G)=\Theta(\log n)$¡£
 
-\cite{graph}ÖÐÓÐÈ¤µÄ½á¹ûÖ®Ò»ÊÇ£¬µ±·Ã´æÍ¼$G$ÊÇÒ»¿ÃÊ÷Ê±£¬\texttt{LRU}´ïµ½ÁËÉÏÃæµÄÏÂ½ç¡£
+\subsection{\texttt{LRU}ÔÚÊ÷ÉÏµÄÇé¾°}
 
-\subsection{\texttt{LRU} vs \texttt{FIFO}}
+\cite{graph}ÖÐÖ¤Ã÷ÁË£¬\texttt{LRU}ÔÚÈÎÒâÊ÷ÉÏ´ïµ½ÁËÉÏÃæ¸ø³öµÄ¾ºÕù±ÈÏÂ½ç£¬²»·Á¼ÇÏÂ½çÎª$a(G)$¡£ÕâÀïÎÒÃÇÏêÏ¸ÌÖÂÛÒ»ÏÂÕâ¸öÄÚÈÝ¡£
 
+Ê×ÏÈÎÒÃÇºÜÈÝÒ×ËµÃ÷£¬\texttt{LRU}ÔÚÄÚ´æÖÐµÄ½ÚµãÒ²×ÜÊÇ¹¹³ÉÒ»¸öÁªÍ¨¿é¡£ÎÒÃÇ³ÆÊ±¿Ì$t$ÔÚ\texttt{LRU}ÔÚÄÚ´æÖÐµÄ½Úµã¹¹³ÉÁË\texttt{LRUTree(t)}£¬\texttt{OPT}ÔÚÄÚ´æÖÐµÄ½Úµã¹¹³ÉÁË\texttt{OPTTree(t)}¡£ÎÒÃÇ³Æ\texttt{LRUTree(t)-OPTTree(t)}ÖÐµÄ½ÚµãÊÇ¹Â¶ÀµÄ\texttt{LRU}½Úµã£¬·´¹ýÀ´\texttt{OPTTree(t)-LRUTree(t)}ÊÇ¹Â¶ÀµÄ\texttt{OPT}½Úµã¡£
 
+ÎÒÃÇÊ¹ÓÃ¼ÇÕË·¨£¬ËµÃ÷\texttt{OPT}µÄÒ»´ÎÈ±Ò³ÖÁ¶à»á¡°µ¼ÖÂ¡±\texttt{LRU}Ö®ºóµÄ$a(G)$´ÎÈ±Ò³¡£Ò»Ð©ÔÚ\texttt{LRUTree}ÄÚµÄ½ÚµãÉÏ·ÅÓÐÆå×Ó¡£µ±Ò»´Î\texttt{OPT}È±Ò³·¢ÉúÊ±£¬Éèµ±Ç°·ÃÎÊµÄ½ÚµãÊÇ$v$¡£ÎÒÃÇÔÚËùÓÐ\texttt{LRUTree}ÉÏËùÓÐÒ¶×Óµ½$v$µÄÎ¨Ò»Â·¾¶ÉÏ£¬µÚÒ»¸öÃ»ÓÐÆå×ÓµÄ½ÚµãÉÏ·ÅÒ»¸öÆå×Ó£¬Èç¹û²»´æÔÚÕâÑùµÄ½Úµã¾Í²»·ÅÖÃ¡£µ±Ò»¸ö½Úµã±»»»³öÄÚ´æÊ±£¬ÎÒÃÇÄÃ×ßÕâ¸ö½ÚµãÉÏµÄÆå×Ó¡£
+
+\begin{lemma}
+  Ã¿¸ö¹Â¶ÀµÄ\texttt{LRU}½ÚµãÉÏ¶¼·ÅÓÐÒ»¸öÆå×Ó¡£
+\end{lemma}
+
+\begin{proof}
+  ÎÒÃÇÖ»ÐèËµÃ÷ÔÚ·¢ÉúÈ±Ò³Ê±ÐÔÖÊ¿ÉÒÔ±£³Ö¼´¿É¡£Éèµ±Ç°·ÃÎÊµÄÒ³ÃæÊÇ$r_t$£¬¿¼ÂÇÁ½¸öËã·¨·¢ÉúÈ±Ò³µÄÈýÖÖÇé¿ö£º
+  \begin{enumerate}
+  \item \texttt{OPT}Î´·¢ÉúÈ±Ò³£¬\texttt{LRU}·¢ÉúÈ±Ò³£ºÕâÊ±»á½«\texttt{LRUTree}µÄÒ»¸öÒ¶×Ó»»³ö£¬½«$r_t$¼ÓÈë\texttt{LRUTree}¡£ÓÉÓÚ\texttt{OPT}Î´·¢ÉúÈ±Ò³£¬Õâ¸ö½Úµã²»»áÊÇ¹Â¶ÀµÄ\texttt{LRU}½Úµã¡£
+  \item \texttt{OPT}·¢ÉúÈ±Ò³£¬\texttt{LRU}·¢ÉúÈ±Ò³¡£ÓëÉÏÒ»ÖÖÇé¿öÏà±È£¬Ö»ÐèËµÃ÷\texttt{OPTTree}ÖÐ»»³öµÄ½ÚµãÒªÃ´²»ÔÚ\texttt{LRUTree}ÖÐ£¬ÒªÃ´·ÅÓÐÒ»¸öÆå×Ó¡£\texttt{OPTTree}ÖÐ»»³öµÄ½ÚµãÒ»¶¨ÊÇÒ»¸öÒ¶×Ó£¬¼ÇÎª$l_t$£¬ÆäÔÚ\texttt{OPTTree}ÉÏµÄÎ¨Ò»¸¸Ç×ÊÇ$p_t$¡£Èç¹û$l_t\in\texttt{LRUTree}$£¬ÔÚ¶Ï¿ª$(p_t, l_t)$ÕâÌõ±ßºó$l_t$Ò»²àµÄ×ÓÊ÷$T'$ÖÐ£¬Õâ´ÎÈ±Ò³·¢ÉúÖ®Ç°Ö»ÓÐ$l_t$²»ÊÇ¹Â¶ÀµÄ\texttt{LRU}½Úµã£¬Ò²Ö»ÓÐ$l_t$ÉÏÃ»ÓÐÆå×Ó¡£ÄÇÃ´¸ù¾Ý·ÅÖÃÆå×ÓµÄ·½·¨£¬$l_t$ÉÏ»á±»·ÅÖÃÒ»¸öÆå×Ó£¬´ýÖ¤µÄÐÔÖÊµÃµ½±£³Ö¡£
+  \item \texttt{OPT}·¢ÉúÈ±Ò³£¬\texttt{LRU}Î´·¢ÉúÈ±Ò³¡£Ò²Ö»ÐèÒªÌÖÂÛÉÏÒ»ÀàÖÐµÄÇé¾°¡£
+  \end{enumerate}
+\end{proof}
+
+\begin{lemma}
+  Ã¿Ò»´Î\texttt{OPT}È±Ò³ÖÁ¶à»á·ÅÖÃ$a(G)$¸öÆå×Ó¡£
+\end{lemma}
+
+\begin{proof}
+  ¿¼ÂÇÒ»¸ö\texttt{OPT}È±Ò³Ê±ÒýÓÃµÄÒ³$r_t$¡£Èç¹û$r_t\not\in\texttt{LRUTree}$£¬¸ù¾Ý·Ã´æÍ¼µÄ¶¨ÒåÕâ¸ö½ÚµãÒ»¶¨ÊÇ$\texttt{LRUTree}\cup\{r_t\}$µÄÒ¶×Ó£¬Õâ¿Ã$k+1$¸ö½ÚµãµÄÊ÷µÄ³ýÈ¥$r_t$µÄÒ¶×ÓÊýÒ»¶¨²»³¬¹ý$a(G)$£¬Òò´Ë·ÅÖÃµÄÆå×ÓÒ²²»³¬¹ý$a(G)$£»Èç¹û$r_t\in\texttt{LRUTree}$£¬ÄÇÃ´ÔÚÕâ´Î·Ã´æÖ®Ç°$r_t$ÊÇÒ»¸ö¹Â¶ÀµÄ\texttt{LRU}½Úµã¡£¿¼ÂÇ°üº¬¹Â¶ÀµÄ\texttt{LRU}½Úµã¹¹³ÉµÄÉ­ÁÖÖÐ$r_t$ËùÔÚµÄ×ÓÊ÷$T'$¡£ÓÉÓÚ\texttt{OPTTree}¹¹³ÉÁËÒ»¸öÁªÍ¨¿é£¬ÖÁÉÙÓÐÒ»¸ö$T'$ÖÐµÄÒ¶×Ó½ÚµãÒ²ÊÇ\texttt{LRUTree}µÄÒ¶×Ó½Úµã£¬ÄÇÃ´Õâ¸ö½Úµãµ½$r_t$µÄÂ·¾¶ÉÏ¶¼ÊÇ¹Â¶ÀµÄ\texttt{LRU}½Úµã£¬Òò´Ë²»»á·ÅÖÃÈÎºÎÐÂµÄÆå×Ó¡£»»ÑÔÖ®£¬·ÅÖÃµÄÆå×ÓÊý²»³¬¹ý\texttt{LRUTree}µÄÒ¶×ÓÊý$-1$£¬Òò´ËÒ²²»³¬¹ý$a(G)$¡£
+\end{proof}
+
+\begin{lemma}
+  \texttt{LRU}×ÜÊÇ»»³öÄÇÐ©·ÅÓÐÆå×ÓµÄ½Úµã¡£
+\end{lemma}
+
+\begin{proof}
+  ¼ÙÉèÔÚÊ±¿Ì$t_1$Ê±ÉÏÒ»´Î·ÃÎÊ×î¾ÃµÄ\texttt{LRUTree}µÄÒ¶×Ó½Úµã$v$ÉÏÃ»ÓÐÆå×Ó¡£²»·ÁÉèÉÏÒ»´Î·ÃÎÊ½Úµã$v$µÄÊ±¿ÌÎª$t_0$£¬ÔÚ$t_1$°üº¬$v$ÇÒ²»°üº¬ÆäËû\texttt{LRUTree}½ÚµãµÄ×ÓÊ÷Îª$T(v)$¡£ÎÒÃÇËµÃ÷ÏÂÃæµÄÊÂÊµ£º
+  \begin{lemma}
+    ÔÚÊ±¿Ì$t_1$£¬ËùÓÐ¹Â¶ÀµÄ\texttt{OPT}½Úµã¶¼ÔÚ$T(v)-\{v\}$ÖÐ¡£
+  \end{lemma}
+  Èç¹ûÓÐÁËÉÏÃæµÄÒýÀí£¬ÎÒÃÇÁ¢¿Ì¿ÉÒÔËµÃ÷£ºÔÚÏÂÒ»´Î\texttt{LRU}È±Ò³·¢ÉúÊ±£¬ÒªÃ´Í¬Ê±³öÏÖÁËÒ»´Î\texttt{OPT}È±Ò³´Ó¶ø$v$»ñµÃÆå×Ó£¬ÒªÃ´ÔÚÏÂÒ»´Î·ÃÎÊÖ®Ç°£¬$t_1$±»ÖØÐÂ·ÃÎÊ£¬²»ÔÙÊÇÉÏÒ»´Î·ÃÎÊ×î¾ÃµÄ½Úµã¡£Òò¶ø¾ÍÖ¤Ã÷ÁË\texttt{LRU}×ÜÊÇ»»³ö·ÅÓÐÆå×ÓµÄ½Úµã¡£
+  
+  ÒýÀíÖ¤Ã÷·ÖÎªËÄ²½£º
+  \begin{enumerate}
+  \item ÔÚÊ±¿Ì$t_0$£¬$T(v)-\{v\}$ÖÐµÄ\texttt{OPT}½ÚµãÊý£¬´óÓÚ»òµÈÓÚ$T(v)-\{v\}$ÖÐÃ»ÓÐÆå×ÓµÄ\texttt{LRU}½ÚµãÊý£ºÕâÊÇÓÉÓÚËùÓÐ¹Â¶ÀµÄ\texttt{LRU}½Úµã¶¼ÓÐÆå×Ó¡£
+  \item ÔÚÊ±¿Ì$t_0$£¬$T(v)-\{v\}$ÖÐÃ»ÓÐÆå×ÓµÄ\texttt{LRUTree}½ÚµãÊý£¬´óÓÚ»òµÈÓÚÔÚÊ±¼ä¶Î$[t_0, t_1]$ÖÐ·ÅÖÃÔÚ$T(v)-\{v\}$ÖÐµÄÆå×ÓÊý£ºÕâÊÇÓÉÓÚÃ¿Ò»¸öÃ»ÓÐÆå×ÓµÄ½ÚµãÖÁ¶àÖ»»á·ÅÖÃÒ»´Î¡£
+  \item ÔÚÊ±¼ä¶Î$[t_0, t_1]$ÖÐ·ÅÖÃÔÚ$T(v)-\{v\}$ÖÐµÄÆå×ÓÊý£¬´óÓÚ»òµÈÓÚ$[t_0, t_1]$Ê±¼ä¶ÎÖÐ·¢Éú\texttt{OPT}È±Ò³µÄ´ÎÊý£ºÕâÊÇÓÉÓÚ$v$ÉÏÃ»ÓÐÆå×Ó£¬ËùÒÔÃ¿´Î\texttt{OPT}È±Ò³ÖÁÉÙ»áÔÚ$T(v)-\{v\}$ÖÐ·ÅÖÃÒ»¸öÆå×Ó¡£
+  \item $[t_0, t_1]$Ê±¼ä¶ÎÖÐ·¢Éú\texttt{OPT}È±Ò³µÄ´ÎÊý£¬´óÓÚ»òµÈÓÚ$t_1$Ê±¿Ì¹Â¶ÀµÄ\texttt{LRU}½ÚµãÊý£¬¼ÓÉÏÊ±¼ä¶Î$[t_0, t_1]$ÖÐ$T(v)-\{v\}$ÄÚ±»»»³öµÄ\texttt{OPT}½ÚµãÊý£º
+    \begin{itemize}
+    \item $t_1$Ê±¿Ì¹Â¶ÀµÄ\texttt{LRU}½ÚµãÔøÔÚ$[t_0, t_1]$ÖÐ±»·ÃÎÊ¹ý£¬Ò²ÔøÊÇ\texttt{OPT}½Úµã¡£Õâ¸ö\texttt{OPT}½Úµã±»»»³ö¶ÔÓ¦ÁËÒ»´Î\texttt{OPT}È±Ò³¡£
+    \item $[t_0, t_1]$ÖÐ$T(v)-\{v\}$±»»»³öµÄÃ¿Ò»¸ö\texttt{OPT}½Úµã¶¼¶ÔÓ¦ÁËÒ»´Î\texttt{OPT}È±Ò³¡£
+    \end{itemize}
+  \end{enumerate}
+
+  Òò´Ë£¬ÔÚÊ±¿Ì$t_0$£¬$T(v)-\{v\}$ÖÐµÄ\texttt{OPT}½ÚµãÊý£¬´óÓÚ»òµÈÓÚ$t_1$Ê±¿Ì¹Â¶ÀµÄ\texttt{LRU}½ÚµãÊý£¬¼ÓÉÏÊ±¼ä¶Î$[t_0, t_1]$ÖÐ$T(v)$ÄÚ±»»»³öµÄ\texttt{OPT}½ÚµãÊý¡£»»ÑÔÖ®£¬$t_1$Ê±¿Ì$T(v)-\{v\}$ÖÐµÄ\texttt{OPT}½ÚµãÊý´óÓÚµÈÓÚ¹Â¶ÀµÄ\texttt{LRU}½ÚµãÊý¡£
+
+  ÓÉÓÚ¹Â¶ÀµÄ\texttt{LRU}½ÚµãÊýµÈÓÚ¹Â¶ÀµÄ\texttt{OPT}½ÚµãÊý£¬ÄÇÃ´¹Â¶ÀµÄ\texttt{OPT}½ÚµãÊýÐ¡ÓÚµÈÓÚ$T(v)-\{v\}$ÄÚµÄ\texttt{OPT}½ÚµãÊý¡£ÒòÎª$t_1$Ê±¿Ì$v$ÊÇÒ»¸öÒ¶×Ó½Úµã£¬$T(v)-\{v\}$ÖÐµÄÃ¿Ò»¸ö\texttt{OPT}½Úµã¶¼ÊÇ¹Â¶ÀµÄ¡£ËùÒÔÃ¿Ò»¸ö¹Â¶ÀµÄ\texttt{OPT}½Úµã¶¼ÔÚ$T(v)-\{v\}$ÖÐ£¬Õâ¾ÍÊÇÎÒÃÇÒªÖ¤Ã÷µÄ¡£
+\end{proof}
+
+ÓÉÉÏÃæµÄÈý¸ö¶¨ÒåÁ¢¿Ì¿ÉÒÔËµÃ÷$c_{LRU, k}=a(G)$£¬Òò´ËÎÒÃÇ¿ÉÒÔ¶ÏÑÔÏÂÃæµÄ¶¨Àí£º
+
+\begin{theorem}
+  ¶ÔÓÚÈÎÒâÎªÊ÷µÄ·Ã´æÍ¼$G$£¬\texttt{LRU}ÊÇ$a(G)$-CompetitiveµÄ¡£ÔÚ¾ºÕù±ÈµÄÒâÒåÏÂ£¬\texttt{LRU}ÊÇ×îÓÅµÄÊ÷ÉÏÒ³ÃæÖÃ»»Ëã·¨¡£
+\end{theorem}
+
+Ê÷´ø¸ø·Ã´æÐòÁÐÒ»¸ö·Ç³£Ç¿µÄÏÞÖÆ£ºÒ»µ©Àë¿ªÁËÄ³¸ö×ÓÊ÷$T(v)$£¬ÏëÒªÔÙ´Î·ÃÎÊ$T(v)$£¬Ò»¶¨ÒªÏÈ·ÃÎÊ½Úµã$v$¡£ÔÚÕâ¸öÏÞÖÆÏÂ£¬\texttt{LRU}¡°¹ýÈ¥µÄÐÅÏ¢¡±¿ÉÒÔºÜºÃµÄÔ¤²â¡°Î´À´µÄÐÅÏ¢¡±£¬´Ó¶ø´ïµ½ÁËÈ·¶¨ÐÔËã·¨µÄÐÂÏÂ½ç¡£
 
 \begin{thebibliography}{3}
 \bibitem{belady1966} Belady, L. A . A study of replacement algorithms for a virtual-storage computer[J]. IBM Systems Journal, 1966, 5(2):78-101.
@@ -278,6 +353,8 @@ BeladyÔÚÆä\cite{belady1966}ÖÐ×îÔç¸ø³öÁË³ÆÎª\texttt{MIN}Ëã·¨µÄ×îÓÅÀëÏßËã·¨¡£ÁíÒ»Ö
 \bibitem{workingset} Denning P J. Working Sets Past and Present[J]. IEEE Transactions on Software Engineering, 1980, 6(1): 64-84.
 \bibitem{graph} Borodin A, Raghavan P, Irani S, et al. Competitive paging with locality of reference[J]. symposium on the theory of computing, 1991, 50(2): 249-259.
 \bibitem{onlinealgo} Albers S. Online algorithms: a survey[J]. Mathematical Programming, 2003, 97(1): 3-26.
+\bibitem{fifolru} Chrobak M, Noga J. LRU is better than FIFO[J]. symposium on discrete algorithms, 1998, 23(2): 78-81.
+\bibitem{stronggraph} Irani S, Karlin A R, Phillips S J, et al. Strongly Competitive Algorithms for Paging with Locality of Reference[J]. SIAM Journal on Computing, 1996, 25(3): 477-497.
 \bibitem{prooffif} \url{https://piazza.com/class/i5j09fnsl7k5x0?cid=1296}
 \bibitem{proofmarking} \url{https://riptutorial.com/algorithm/topic/8022/online-algorithms}
 \bibitem{mitonline} \url{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-854j-advanced-algorithms-fall-2005/lecture-notes/n23online.pdf}

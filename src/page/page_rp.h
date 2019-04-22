@@ -42,6 +42,8 @@ public:
 	{}
         virtual void reset_hook(int n)
 	{}
+	virtual void swap_in_hook(size_t pos)
+	{}
 	// get mask of page 	
 	int get_mask(size_t pos);
 	// set mask for page

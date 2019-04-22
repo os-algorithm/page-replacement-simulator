@@ -7,7 +7,7 @@ extern void hacker_main();
 
 int main()
 {
-	analyze_main();
+	// analyze_main();
 	hacker_main();
 	return 0;
 }
