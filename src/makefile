@@ -20,10 +20,10 @@ driver.o: driver.cpp
 opt.o: opt.cpp
 	$(cc) -c opt.cpp -o opt.o $(flags)
 
-page.o: $(pages)
+page.o: $(pages) $(headers)
 	$(cc) -c ./page/page_rp.cpp -o page.o $(flags)
 
-hacker.o: $(hackers)
+hacker.o: $(hackers) $(pages) $(headers)
 	$(cc) -c ./hacker/hacker_driver.cpp -o hacker.o $(flags)
 
 clean:
@@ -32,3 +32,4 @@ clean:
 	find . -name "*.log" | xargs rm  -rf
 	find . -name "*.o" | xargs rm -rf
 	find . -name "sim" | xargs rm -rf
+	find . -name "*.gch" | xargs rm -rf

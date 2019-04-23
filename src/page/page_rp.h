@@ -1,8 +1,10 @@
 #pragma once
 #include <cstddef>
 #include <map>
+#include <unordered_map>
 
 using std::map;
+using std::unordered_map;
 
 const int PTE_P = 1;
 const int PTE_A = 2;
@@ -26,21 +28,21 @@ class page_rp {
 	
 public:
 	
-	int n;
-	map<size_t, int> mem;
+	size_t n;
+	unordered_map<size_t, int> mem;
 	char name[20];
 	int miss;
 	int push;
 	int pull;
 	// init and set memory size to n
-	void reset(int n);
-	// find a page to swap out , return page number
-	virtual size_t find_swap() = 0;
+	void reset(size_t n);
+	// find a page to swap out , page fault cause by pos, return page number
+	virtual size_t find_swap(size_t pos) = 0;
 	virtual void write_hook(size_t pos)
 	{}
 	virtual void read_hook(size_t pos)
 	{}
-        virtual void reset_hook(int n)
+        virtual void reset_hook(size_t n)
 	{}
 	virtual void swap_in_hook(size_t pos)
 	{}
@@ -54,6 +56,5 @@ public:
 	bool inside(size_t pos);
 	void write(size_t pos);
 	void read(size_t pos);
-
 };
 

@@ -12,6 +12,10 @@ using std::map;
  * replace an random page in memory.
  */
 class rp_ran : public page_rp {
+
+	vector<size_t> vec;
+	bool out;
+	size_t pos;
 	
 public:
 
@@ -21,13 +25,28 @@ public:
 		strcpy(name, "random");
 	}
 
-	virtual size_t find_swap()
+	virtual void reset_hook(size_t n)
+	{
+		vec.clear();
+		out = false;
+	}
+	
+	virtual void swap_in_hook(size_t addr)
+	{
+		if (!out) {
+			vec.push_back(addr);
+		} else {
+			out = false;
+			vec[pos] = addr;
+		}
+	}
+	
+	virtual size_t find_swap(size_t current)
 	{
 		assert(mem.size() == n);
-		int ran = rand()%n+1;
-		map<size_t, int>::iterator iter = mem.begin();
-		for (int i = 1; i < ran; i++)
-			iter++;
-		return iter->first;
+		size_t ran = rand()%n;
+		out = true;
+		pos = ran;
+		return vec[ran];
 	}
 } ;

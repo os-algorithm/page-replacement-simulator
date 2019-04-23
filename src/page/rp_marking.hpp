@@ -19,11 +19,10 @@ class rp_marking : public page_rp {
 
 	vector<size_t> unmarked;
 	vector<size_t> marked;
-	size_t current;
 
 public:
 
-	virtual void reset_hook(int n)
+	virtual void reset_hook(size_t n)
 	{
 		unmarked.clear();
 		marked.clear();
@@ -41,7 +40,7 @@ public:
 		set_mask(pos, get_mask(pos) | PTE_A);
 	}
 	
-	virtual size_t find_swap()
+	virtual size_t find_swap(size_t current)
 	{
 		while (!unmarked.empty()) {
 			size_t top = unmarked[unmarked.size()-1];

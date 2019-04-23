@@ -31,7 +31,7 @@ class rp_lru : public page_rp {
 	
 public:
 
-	virtual void reset_hook(int n)
+	virtual void reset_hook(size_t n)
 	{
 		time = 0;
 		rec.clear();
@@ -51,7 +51,7 @@ public:
 	virtual void read_hook(size_t pos)
 	{ rec[pos] = ++time, que.push(make_pair(time, pos)); }
 
-	virtual size_t find_swap()
+	virtual size_t find_swap(size_t current)
 	{
 		// delete wrone info
 		while (!que.empty() && (!rec.count(que.top().second)

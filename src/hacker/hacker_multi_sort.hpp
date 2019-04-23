@@ -1,15 +1,29 @@
 /* Simple Test Case
  * multi thread : sort
  */
+#pragma once
+
+#include <string>
+#include <mutex>
+#include <iostream>
+#include <thread>
+
+using std::string;
+using std::mutex;
+using std::cout;
+using std::endl;
+using std::thread;
+
+mutex mut_print;
 
 class multi_sort_hacker : public hacker {
 
 public:
-
+	
 	multi_sort_hacker()
 	{ name = "multi sort hacker"; }
 
-	void sort(Array<int> a, Array<int> tmp, int L, int R)
+	static void sort(Array<int> a, Array<int> tmp, int L, int R)
 	{
 		if (L >= R) return;
 		int mid = (L+R) >> 1;
@@ -25,7 +39,7 @@ public:
 			a[i] = tmp[i];
 	}
 	
-	void sort_thread(int n)
+	static void sort_thread(Simulater *sim, int id, int n)
 	{
 		Array<int> a = sim->new_array<int>(n);
 		Array<int> tmp = sim->new_array<int>(n);
@@ -44,7 +58,14 @@ public:
 	virtual void main(Simulater *sim)
 	{
 		this->sim = sim;
-		sort_thread(1 << 18);
+		thread th[18];
+			
+		for (int j = 0; j < 18; j++)  {
+			th[j] = thread(sort_thread, sim, j, 1 << j);
+		}
+		for (int j = 0; j < 18; j++)
+			th[j].join();
 	}
 } ;
+
 

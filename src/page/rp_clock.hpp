@@ -26,7 +26,7 @@ public:
 		memset(name, 0, sizeof name);
 		strcpy(name, "clock with d bit");
 	}
-	virtual void reset_hook(int n)
+	virtual void reset_hook(size_t n)
 	{
 		clocks.resize(n);
 		pres.resize(n);
@@ -49,19 +49,17 @@ public:
 
 	virtual void read_hook(size_t pos)
 	{
-		current = pos;
 		if (!inside(pos) && mem.size() < n)
 			put_inside(pos);
 	}
 
 	virtual void write_hook(size_t pos)
 	{
-		current = pos;
 		if (!inside(pos) && mem.size() < n)
 			put_inside(pos);
 	}
 
-	virtual size_t find_swap()
+	virtual size_t find_swap(size_t current)
 	{
 		assert(mem.size() == n);
 		while (1) {

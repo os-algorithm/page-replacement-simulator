@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <cassert>
 #include <cstring>
 #include <set>
@@ -14,7 +14,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::vector;
-using std::map;
+using std::unordered_map;
 using std::set;
 using std::queue;
 using std::priority_queue;
@@ -26,8 +26,8 @@ void page_rp::swap_in(size_t pos)
 		pull++;
 		mem[pos] = PTE_P;
 	} else {
-		size_t page = find_swap();
-		map<size_t, int>::iterator iter = mem.find(page);
+		size_t page = find_swap(pos);
+		unordered_map<size_t, int>::iterator iter = mem.find(page);
 		assert(iter != mem.end());
 		if (iter->second & PTE_D)
 			push++;
@@ -38,7 +38,7 @@ void page_rp::swap_in(size_t pos)
 	swap_in_hook(pos);
 }
 
-void page_rp::reset(int n)
+void page_rp::reset(size_t n)
 {
 	reset_hook(n); 
 	this->n = n;
@@ -64,6 +64,7 @@ void page_rp::set_mask(size_t pos, int mask)
 // for clock algorithm
 void page_rp::write_back(size_t pos)
 {
+	assert(mem.count(pos));
 	push++;
 	mem[pos] &= ~PTE_D;
 }
@@ -73,7 +74,7 @@ bool page_rp::inside(size_t pos)
 
 void page_rp::write(size_t pos)
 {
-	map<size_t, int>::iterator iter = mem.find(pos);
+	unordered_map<size_t, int>::iterator iter = mem.find(pos);
 	write_hook(pos);
 	if (iter != mem.end()) {
 		iter->second |= PTE_A | PTE_D;
@@ -84,7 +85,7 @@ void page_rp::write(size_t pos)
 
 void page_rp::read(size_t pos)
 {
-	map<size_t, int>::iterator iter = mem.find(pos);
+	unordered_map<size_t, int>::iterator iter = mem.find(pos);
 	read_hook(pos);
 	if (iter != mem.end()) {
 		iter->second |= PTE_A;

@@ -18,7 +18,7 @@ class rp_fifo : public page_rp {
 	
 public:
 
-	virtual void reset_hook(int n)
+	virtual void reset_hook(size_t n)
 	{
 		time = 0;
 		while (!reco.empty())
@@ -31,21 +31,16 @@ public:
 		strcpy(name, "FIFO");
 	}
 
-	virtual void write_hook(size_t pos)
+	virtual void swap_in_hook(size_t pos)
 	{
-		if (!mem.count(pos))
-			reco.push(pos);
-	}
-
-	virtual void read_hook(size_t pos)
-	{
-		if (!mem.count(pos))
-			reco.push(pos);
+		reco.push(pos);
 	}
 	
-	virtual size_t find_swap()
+	virtual size_t find_swap(size_t current)
 	{
 		assert(!reco.empty());
+		assert(mem.size() == n);
+		assert(reco.size() == n);
 		size_t t = reco.front(); reco.pop();
 		return t;
 	}
