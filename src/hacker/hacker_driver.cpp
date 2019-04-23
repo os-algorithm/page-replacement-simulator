@@ -30,12 +30,16 @@ using std::endl;
 #include "hacker_certain.hpp"
 #include "hacker_certain_ran.hpp"
 #include "hacker_multi_sort.hpp"
+#include "hacker_tree.hpp"
 
 extern size_t get_opt(const vector<ref_trace>&, int);
 
 class HackDriver {
 
-	void hack(hacker &h, page_rp &algo);
+	void hack(hacker &h, page_rp &algo, bool trace);
+	void hack(hacker &h, page_rp &algo)
+	{ hack(h, algo, false); }
+	
 	vector<int> mem_size;
 	
 	void test_memory(size_t memory_size)
@@ -50,10 +54,8 @@ public:
 	/* add the physical page number you want to test */
 	HackDriver()
 	{
-		test_memory(1 << 19);
-		test_memory(1 << 22);
-		test_memory(1 << 25);
-		test_memory(1 << 30);
+		for (size_t i = 2; i < 64; i++)
+			test_memory(i * pgsize);
 	}
 
 	void hack_all(hacker &hacker_this)
@@ -79,18 +81,24 @@ public:
 /* hack algorithm algo with hacker h 
  * online test, multi-thread allowed
  */
-void HackDriver::hack(hacker &h, page_rp &algo)
+void HackDriver::hack(hacker &h, page_rp &algo, bool trace)
 {
 	cout << "hacker : " << h.name <<  endl << "defender : " << algo.name << endl;
-	Simulater sim(&algo, false);
+	Simulater sim(&algo, true);
         for (int size : mem_size) {
 		algo.reset(size);
 		sim.reset();
 		h.main(&sim);
-		cout << "> page = " << size
-		     << ", miss = " << algo.miss
-		     << endl;
-        }
+		/* cout << "> page = " << size
+		     << " miss = " << algo.miss
+		     << " access = " << algo.access; */
+		cout << algo.miss << " " << algo.access-algo.miss << " " << get_opt(sim.get_trace(), size) << endl;
+		if (trace) {
+			cout << " competitive = "
+			     << 1.0 * algo.miss / get_opt(sim.get_trace(), size);
+		}
+		// cout << endl;
+	}
 }
 
 /* main function for hacker driver
@@ -98,10 +106,13 @@ void HackDriver::hack(hacker &h, page_rp &algo)
  */
 void HackDriver::main()
 {
+	// static certain_hacker_ran hacker_certain;
 	// hack_all(hacker_certain);
 	// hack_all(hacker_certain_ran);
-	multi_sort_hacker hacker_multi_sort;
-	hack_all(hacker_multi_sort);
+	static tree_hacker hacker_tree;
+	hack_all(hacker_tree);
+	// multi_sort_hacker hacker_multi_sort;
+	// hack_all(hacker_multi_sort);
 }
 
 void hacker_main()

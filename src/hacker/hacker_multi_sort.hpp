@@ -57,13 +57,14 @@ public:
 	
 	virtual void main(Simulater *sim)
 	{
+		srand(19260817);
 		this->sim = sim;
-		thread th[18];
+		thread th[16];
 			
-		for (int j = 0; j < 18; j++)  {
-			th[j] = thread(sort_thread, sim, j, 1 << j);
+		for (int j = 0; j < 8; j++)  {
+			th[j] = thread(sort_thread, sim, j, j * pgsize);
 		}
-		for (int j = 0; j < 18; j++)
+		for (int j = 0; j < 8; j++)
 			th[j].join();
 	}
 } ;

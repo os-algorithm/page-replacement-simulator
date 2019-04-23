@@ -31,9 +31,14 @@ public:
 	size_t n;
 	unordered_map<size_t, int> mem;
 	char name[20];
-	int miss;
-	int push;
-	int pull;
+
+	size_t miss;
+	size_t push;
+	size_t pull;
+	size_t access;
+	size_t ticks;
+	size_t tick_tick;
+	
 	// init and set memory size to n
 	void reset(size_t n);
 	// find a page to swap out , page fault cause by pos, return page number
@@ -46,6 +51,10 @@ public:
 	{}
 	virtual void swap_in_hook(size_t pos)
 	{}
+	// clock interrupte
+	virtual void tick()
+	{}
+	
 	// get mask of page 	
 	int get_mask(size_t pos);
 	// set mask for page
@@ -56,5 +65,6 @@ public:
 	bool inside(size_t pos);
 	void write(size_t pos);
 	void read(size_t pos);
+	void ticker();
 };
 

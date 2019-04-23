@@ -137,6 +137,7 @@ class Simulater {
 	void reset()
 	{
 		top = 0;
+		trace.clear();
 	}
 	
 	/* alloc an array of length n 
@@ -146,7 +147,7 @@ class Simulater {
 	Array<T> new_array(size_t len)
 	{
 		mut_ref.lock();
-		if (top + len * sizeof(T) >= mem_size)
+		if (top + len * sizeof(T) > mem_size)
 			assert(false);
 		Array<T> nar(this, top, len);
 		top += len * sizeof(T);
@@ -176,8 +177,8 @@ class Simulater {
 		if (record) {
 			trace.push_back(ref_trace(type, pos));
 		}
-		if (type == Read) rp_algo->read(pos);
-		else rp_algo->write(pos);
+		if (type == Read) rp_algo->read(pos / pgsize);
+		else rp_algo->write(pos / pgsize);
 		mut_mem.unlock();
 	}
 
