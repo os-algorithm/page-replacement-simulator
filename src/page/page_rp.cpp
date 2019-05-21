@@ -19,6 +19,15 @@ using std::set;
 using std::queue;
 using std::priority_queue;
 
+void page_rp::swap_out(size_t page)
+{
+	unordered_map<size_t, int>::iterator iter = mem.find(page);
+	assert(iter != mem.end());
+	if (iter->second & PTE_D)
+		push++;
+	mem.erase(iter);
+}
+
 void page_rp::swap_in(size_t pos)
 {
 	miss++;
@@ -27,12 +36,8 @@ void page_rp::swap_in(size_t pos)
 		mem[pos] = PTE_P;
 	} else {
 		size_t page = find_swap(pos);
-		unordered_map<size_t, int>::iterator iter = mem.find(page);
-		assert(iter != mem.end());
-		if (iter->second & PTE_D)
-			push++;
+		swap_out(page);
 		pull++;
-		mem.erase(iter);
 		mem[pos] = PTE_P;
 	}
 	swap_in_hook(pos);
@@ -40,11 +45,13 @@ void page_rp::swap_in(size_t pos)
 
 void page_rp::reset(size_t n)
 {
-	reset_hook(n); 
 	this->n = n;
 	mem.clear();
 	miss = push = pull = access = 0;
 	ticks = 0;
+	mem_use = 0;
+	tick_tick = 1;
+	reset_hook(n); 
 }
 
 // get mask of page 	
@@ -96,12 +103,12 @@ void page_rp::read(size_t pos)
 	} else {
 		swap_in(pos);
 	}
-	
 	ticker();
 }
 
 void page_rp::ticker()
 {
+	mem_use += mem.size();
 	if ((++ticks) % tick_tick == 0)
 		tick();
 }

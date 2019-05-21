@@ -1,3 +1,7 @@
+/* FIFO Replacement Algorithm
+ * First-in-first-out, replace the "oldest" page.
+ * May suffer from Belady's Anomaly. 
+ */
 #pragma once
 #include <queue>
 #include <cstring>
@@ -7,10 +11,6 @@
 
 using std::queue;
 
-/* FIFO Replacement Algorithm
- * First-in-first-out, replace the "oldest" page.
- * May suffer from Belady's Anomaly. 
- */
 class rp_fifo : public page_rp {
 
 	size_t time;

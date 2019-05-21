@@ -27,6 +27,7 @@ using std::endl;
 #include "../page/rp_clock.hpp"
 #include "../page/rp_fifo.hpp"
 #include "../page/rp_marking.hpp"
+#include "../page/working_set.hpp"
 #include "hacker_certain.hpp"
 #include "hacker_certain_ran.hpp"
 #include "hacker_multi_sort.hpp"
@@ -65,8 +66,9 @@ public:
 		rp_lru rp_lru_algo;
 		rp_clock rp_clock_algo;
 		rp_ran rp_ran_algo;
-
+		working_set working_set_algo;
 		cout << "--- Hackall : " << hacker_this.name << " ---" << endl;
+		hack(hacker_this, working_set_algo);
 		hack(hacker_this, rp_marking_algo);
 		hack(hacker_this, rp_fifo_algo);
 		hack(hacker_this, rp_lru_algo);
@@ -85,14 +87,15 @@ void HackDriver::hack(hacker &h, page_rp &algo, bool trace)
 {
 	cout << "hacker : " << h.name <<  endl << "defender : " << algo.name << endl;
 	Simulater sim(&algo, true);
-        for (int size : mem_size) {
+	for (int size : mem_size) {
 		algo.reset(size);
 		sim.reset();
 		h.main(&sim);
 		/* cout << "> page = " << size
 		     << " miss = " << algo.miss
 		     << " access = " << algo.access; */
-		cout << algo.miss << " " << algo.access-algo.miss << " " << get_opt(sim.get_trace(), size) << endl;
+		assert(algo.access != 0);
+		cout << algo.miss << " " << algo.access-algo.miss << " " << get_opt(sim.get_trace(), size) << " " << algo.mem_use / algo.access << endl;
 		if (trace) {
 			cout << " competitive = "
 			     << 1.0 * algo.miss / get_opt(sim.get_trace(), size);
@@ -109,10 +112,10 @@ void HackDriver::main()
 	// static certain_hacker_ran hacker_certain;
 	// hack_all(hacker_certain);
 	// hack_all(hacker_certain_ran);
-	static tree_hacker hacker_tree;
-	hack_all(hacker_tree);
-	// multi_sort_hacker hacker_multi_sort;
-	// hack_all(hacker_multi_sort);
+	// static tree_hacker hacker_tree;
+	// hack_all(hacker_tree);
+	multi_sort_hacker hacker_multi_sort;
+	hack_all(hacker_multi_sort);
 }
 
 void hacker_main()

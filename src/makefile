@@ -4,7 +4,7 @@ vpath %.h ./header
 VPATH = hacker:page:header:analyzer
 
 hackers = hacker_driver.cpp hacker_certain.hpp hacker_certain_ran.hpp hacker_multi_sort.hpp sim_mem.hpp hacker_tree.hpp
-pages = page_rp.cpp rp_fifo.hpp rp_lru.hpp rp_marking.hpp rp_clock.hpp rp_random.hpp
+pages = page_rp.cpp rp_fifo.hpp rp_lru.hpp rp_marking.hpp rp_clock.hpp rp_random.hpp working_set.hpp
 headers = trace.h page_rp.h
 flags = -O2 -std=c++11 -lpthread
 

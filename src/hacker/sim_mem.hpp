@@ -175,7 +175,7 @@ class Simulater {
 	{
 		mut_mem.lock();
 		if (record) {
-			trace.push_back(ref_trace(type, pos));
+			trace.push_back(ref_trace(type, pos / pgsize));
 		}
 		if (type == Read) rp_algo->read(pos / pgsize);
 		else rp_algo->write(pos / pgsize);

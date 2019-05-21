@@ -27,6 +27,8 @@ class page_rp {
 	void swap_in(size_t pos);
 	
 public:
+
+	void swap_out(size_t pos);
 	
 	size_t n;
 	unordered_map<size_t, int> mem;
@@ -38,6 +40,7 @@ public:
 	size_t access;
 	size_t ticks;
 	size_t tick_tick;
+	double mem_use;
 	
 	// init and set memory size to n
 	void reset(size_t n);
@@ -54,7 +57,7 @@ public:
 	// clock interrupte
 	virtual void tick()
 	{}
-	
+        
 	// get mask of page 	
 	int get_mask(size_t pos);
 	// set mask for page
